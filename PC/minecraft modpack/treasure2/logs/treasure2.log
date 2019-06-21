@@ -1,0 +1,655 @@
+2019-05-05 17:08:40,807 [Server thread] ERROR Treasure2 | TreasureLootTableManager.java:196 | Couldn't load loot table treasure2:armor/uncommon from jar:file:/C:/Users/amarc/AppData/Roaming/.minecraft/mods/Treasure2-mc1.12.2-f14.23.5.2768-v1.3.0.jar!/assets/treasure2/loot_tables/armor/uncommon.json
+com.google.gson.JsonSyntaxException: Expected name to be an item, was unknown string 'sgs_metals:bone_chestplate'
+	at net.minecraft.util.JsonUtils.func_188172_b(SourceFile:124) ~[rc.class:?]
+	at net.minecraft.util.JsonUtils.func_188180_i(SourceFile:135) ~[rc.class:?]
+	at com.someguyssoftware.treasure2.loot.TreasureLootEntryItem.deserialize(TreasureLootEntryItem.java:100) ~[TreasureLootEntryItem.class:?]
+	at com.someguyssoftware.treasure2.loot.TreasureLootEntry$Serializer.deserialize(TreasureLootEntry.java:92) ~[TreasureLootEntry$Serializer.class:?]
+	at com.someguyssoftware.treasure2.loot.TreasureLootEntry$Serializer.deserialize(TreasureLootEntry.java:72) ~[TreasureLootEntry$Serializer.class:?]
+	at com.google.gson.internal.bind.TreeTypeAdapter.read(TreeTypeAdapter.java:69) ~[TreeTypeAdapter.class:?]
+	at com.google.gson.internal.bind.TypeAdapterRuntimeTypeWrapper.read(TypeAdapterRuntimeTypeWrapper.java:41) ~[TypeAdapterRuntimeTypeWrapper.class:?]
+	at com.google.gson.internal.bind.ArrayTypeAdapter.read(ArrayTypeAdapter.java:72) ~[ArrayTypeAdapter.class:?]
+	at com.google.gson.Gson.fromJson(Gson.java:887) ~[Gson.class:?]
+	at com.google.gson.Gson.fromJson(Gson.java:952) ~[Gson.class:?]
+	at com.google.gson.internal.bind.TreeTypeAdapter$GsonContextImpl.deserialize(TreeTypeAdapter.java:162) ~[TreeTypeAdapter$GsonContextImpl.class:?]
+	at net.minecraft.util.JsonUtils.func_188179_a(SourceFile:439) ~[rc.class:?]
+	at net.minecraft.util.JsonUtils.func_188174_a(SourceFile:447) ~[rc.class:?]
+	at com.someguyssoftware.treasure2.loot.TreasureLootPool$Serializer.deserialize(TreasureLootPool.java:169) ~[TreasureLootPool$Serializer.class:?]
+	at com.someguyssoftware.treasure2.loot.TreasureLootPool$Serializer.deserialize(TreasureLootPool.java:165) ~[TreasureLootPool$Serializer.class:?]
+	at com.google.gson.internal.bind.TreeTypeAdapter.read(TreeTypeAdapter.java:69) ~[TreeTypeAdapter.class:?]
+	at com.google.gson.internal.bind.TypeAdapterRuntimeTypeWrapper.read(TypeAdapterRuntimeTypeWrapper.java:41) ~[TypeAdapterRuntimeTypeWrapper.class:?]
+	at com.google.gson.internal.bind.ArrayTypeAdapter.read(ArrayTypeAdapter.java:72) ~[ArrayTypeAdapter.class:?]
+	at com.google.gson.Gson.fromJson(Gson.java:887) ~[Gson.class:?]
+	at com.google.gson.Gson.fromJson(Gson.java:952) ~[Gson.class:?]
+	at com.google.gson.internal.bind.TreeTypeAdapter$GsonContextImpl.deserialize(TreeTypeAdapter.java:162) ~[TreeTypeAdapter$GsonContextImpl.class:?]
+	at net.minecraft.util.JsonUtils.func_188179_a(SourceFile:439) ~[rc.class:?]
+	at net.minecraft.util.JsonUtils.func_188177_a(SourceFile:455) ~[rc.class:?]
+	at com.someguyssoftware.treasure2.loot.TreasureLootTable$Serializer.deserialize(TreasureLootTable.java:206) ~[TreasureLootTable$Serializer.class:?]
+	at com.someguyssoftware.treasure2.loot.TreasureLootTable$Serializer.deserialize(TreasureLootTable.java:203) ~[TreasureLootTable$Serializer.class:?]
+	at com.google.gson.internal.bind.TreeTypeAdapter.read(TreeTypeAdapter.java:69) ~[TreeTypeAdapter.class:?]
+	at com.google.gson.Gson.fromJson(Gson.java:887) ~[Gson.class:?]
+	at com.google.gson.Gson.fromJson(Gson.java:852) ~[Gson.class:?]
+	at com.google.gson.Gson.fromJson(Gson.java:801) ~[Gson.class:?]
+	at com.google.gson.Gson.fromJson(Gson.java:773) ~[Gson.class:?]
+	at com.someguyssoftware.treasure2.loot.TreasureLootTableManager.hookLoadLootTable(TreasureLootTableManager.java:216) ~[TreasureLootTableManager.class:?]
+	at com.someguyssoftware.treasure2.loot.TreasureLootTableManager$Loader.loadBuiltinLootTable(TreasureLootTableManager.java:193) [TreasureLootTableManager$Loader.class:?]
+	at com.someguyssoftware.treasure2.loot.TreasureLootTableManager$Loader.load(TreasureLootTableManager.java:118) [TreasureLootTableManager$Loader.class:?]
+	at com.someguyssoftware.treasure2.loot.TreasureLootTableManager$Loader.load(TreasureLootTableManager.java:104) [TreasureLootTableManager$Loader.class:?]
+	at com.google.common.cache.LocalCache$LoadingValueReference.loadFuture(LocalCache.java:3716) [guava-21.0.jar:?]
+	at com.google.common.cache.LocalCache$Segment.loadSync(LocalCache.java:2424) [guava-21.0.jar:?]
+	at com.google.common.cache.LocalCache$Segment.lockedGetOrLoad(LocalCache.java:2298) [guava-21.0.jar:?]
+	at com.google.common.cache.LocalCache$Segment.get(LocalCache.java:2211) [guava-21.0.jar:?]
+	at com.google.common.cache.LocalCache.get(LocalCache.java:4154) [guava-21.0.jar:?]
+	at com.google.common.cache.LocalCache.getOrLoad(LocalCache.java:4158) [guava-21.0.jar:?]
+	at com.google.common.cache.LocalCache$LocalLoadingCache.get(LocalCache.java:5147) [guava-21.0.jar:?]
+	at com.google.common.cache.LocalCache$LocalLoadingCache.getUnchecked(LocalCache.java:5153) [guava-21.0.jar:?]
+	at com.someguyssoftware.treasure2.loot.TreasureLootTableManager.getLootTableFromLocation(TreasureLootTableManager.java:91) [TreasureLootTableManager.class:?]
+	at com.someguyssoftware.treasure2.loot.TreasureLootEntryTable.addLoot(TreasureLootEntryTable.java:44) [TreasureLootEntryTable.class:?]
+	at com.someguyssoftware.treasure2.loot.TreasureLootPool.createLootRoll(TreasureLootPool.java:76) [TreasureLootPool.class:?]
+	at com.someguyssoftware.treasure2.loot.TreasureLootPool.generateLoot(TreasureLootPool.java:91) [TreasureLootPool.class:?]
+	at com.someguyssoftware.treasure2.loot.TreasureLootTable.generateLootFromPools(TreasureLootTable.java:54) [TreasureLootTable.class:?]
+	at com.someguyssoftware.treasure2.loot.TreasureLootTable.fillInventory(TreasureLootTable.java:72) [TreasureLootTable.class:?]
+	at com.someguyssoftware.treasure2.generator.chest.AbstractChestGenerator.generate(AbstractChestGenerator.java:156) [AbstractChestGenerator.class:?]
+	at com.someguyssoftware.treasure2.worldgen.ChestWorldGenerator.generateSurface(ChestWorldGenerator.java:216) [ChestWorldGenerator.class:?]
+	at com.someguyssoftware.treasure2.worldgen.ChestWorldGenerator.generate(ChestWorldGenerator.java:126) [ChestWorldGenerator.class:?]
+	at net.minecraftforge.fml.common.registry.GameRegistry.generateWorld(GameRegistry.java:167) [GameRegistry.class:?]
+	at net.minecraft.world.chunk.Chunk.func_186034_a(Chunk.java:1020) [axw.class:?]
+	at net.minecraft.world.chunk.Chunk.func_186030_a(Chunk.java:999) [axw.class:?]
+	at net.minecraft.world.gen.ChunkProviderServer.func_186025_d(ChunkProviderServer.java:157) [on.class:?]
+	at net.minecraft.server.MinecraftServer.func_71222_d(MinecraftServer.java:344) [MinecraftServer.class:?]
+	at net.minecraft.server.integrated.IntegratedServer.func_71247_a(IntegratedServer.java:186) [chd.class:?]
+	at net.minecraft.server.integrated.IntegratedServer.func_71197_b(IntegratedServer.java:209) [chd.class:?]
+	at net.minecraft.server.MinecraftServer.run(MinecraftServer.java:486) [MinecraftServer.class:?]
+	at java.lang.Thread.run(Unknown Source) [?:1.8.0_211]
+2019-05-05 17:08:40,834 [Server thread] INFO Treasure2 | AbstractChestGenerator.java:167 | CHEATER! UNCOMMON chest at coords: -72 64 168
+2019-05-05 17:08:43,638 [Server thread] INFO Treasure2 | AbstractChestGenerator.java:167 | CHEATER! UNCOMMON chest at coords: 56 114 -8
+2019-05-05 17:08:45,509 [Server thread] INFO Treasure2 | AbstractChestGenerator.java:167 | CHEATER! SCARCE chest at coords: 120 32 104
+2019-05-05 17:08:46,016 [Server thread] INFO Treasure2 | WoodDrawWellGenerator.java:79 | CHEATER! Wishing Well at coords: 136 100 168
+2019-05-05 17:09:01,390 [Server thread] INFO Treasure2 | AbstractChestGenerator.java:167 | CHEATER! UNCOMMON chest at coords: 200 61 -136
+2019-05-05 17:09:09,709 [Server thread] INFO Treasure2 | AbstractChestGenerator.java:167 | CHEATER! COMMON chest at coords: 120 55 216
+2019-05-05 17:09:14,669 [Server thread] INFO Treasure2 | AbstractChestGenerator.java:167 | CHEATER! UNCOMMON chest at coords: -8 73 232
+2019-05-05 17:09:19,832 [Server thread] INFO Treasure2 | AbstractChestGenerator.java:167 | CHEATER! SCARCE chest at coords: -232 41 248
+2019-05-05 17:09:25,166 [Server thread] INFO Treasure2 | AbstractChestGenerator.java:167 | CHEATER! COMMON chest at coords: -248 70 -24
+2019-05-05 17:09:25,254 [Server thread] INFO Treasure2 | CanopyWellGenerator.java:79 | CHEATER! Wishing Well at coords: -248 79 8
+2019-05-05 17:09:30,352 [Server thread] INFO Treasure2 | AbstractChestGenerator.java:167 | CHEATER! UNCOMMON chest at coords: 280 56 40
+2019-05-05 17:09:35,056 [Server thread] INFO Treasure2 | AbstractChestGenerator.java:167 | CHEATER! EPIC chest at coords: -312 65 104
+2019-05-05 17:09:41,262 [Server thread] INFO Treasure2 | AbstractChestGenerator.java:167 | CHEATER! COMMON chest at coords: 296 56 -200
+2019-05-05 17:09:45,084 [Server thread] INFO Treasure2 | AbstractChestGenerator.java:167 | CHEATER! RARE chest at coords: -296 39 200
+2019-05-05 17:09:49,543 [Server thread] INFO Treasure2 | AbstractChestGenerator.java:167 | CHEATER! COMMON chest at coords: 296 55 312
+2019-05-05 17:09:53,663 [Server thread] INFO Treasure2 | AbstractChestGenerator.java:167 | CHEATER! UNCOMMON chest at coords: -376 67 280
+2019-05-05 17:09:59,773 [Server thread] INFO Treasure2 | AbstractChestGenerator.java:167 | CHEATER! UNCOMMON chest at coords: 344 98 184
+2019-05-05 17:10:06,874 [Server thread] INFO Treasure2 | AbstractChestGenerator.java:167 | CHEATER! RARE chest at coords: 360 44 56
+2019-05-05 17:10:08,982 [Server thread] INFO Treasure2 | WoodDrawWellGenerator.java:79 | CHEATER! Wishing Well at coords: -344 66 312
+2019-05-05 17:10:11,539 [Server thread] INFO Treasure2 | AbstractChestGenerator.java:167 | CHEATER! COMMON chest at coords: -344 53 -344
+2019-05-05 17:10:16,943 [Server thread] INFO Treasure2 | AbstractChestGenerator.java:167 | CHEATER! UNCOMMON chest at coords: -424 58 216
+2019-05-05 17:10:26,643 [Server thread] INFO Treasure2 | AbstractChestGenerator.java:167 | CHEATER! COMMON chest at coords: -376 50 -72
+2019-05-05 17:10:29,694 [Server thread] INFO Treasure2 | AbstractChestGenerator.java:167 | CHEATER! COMMON chest at coords: 72 57 -376
+2019-05-05 17:10:31,071 [Server thread] INFO Treasure2 | WoodDrawWellGenerator.java:79 | CHEATER! Wishing Well at coords: 408 64 -216
+2019-05-05 17:10:35,097 [Server thread] INFO Treasure2 | AbstractChestGenerator.java:167 | CHEATER! COMMON chest at coords: -248 60 408
+2019-05-05 17:10:48,346 [Server thread] INFO Treasure2 | AbstractChestGenerator.java:167 | CHEATER! COMMON chest at coords: -248 52 -408
+2019-05-05 17:10:53,286 [Server thread] INFO Treasure2 | AbstractChestGenerator.java:167 | CHEATER! UNCOMMON chest at coords: 440 40 -408
+2019-05-05 17:10:57,213 [Server thread] INFO Treasure2 | AbstractChestGenerator.java:167 | CHEATER! COMMON chest at coords: 440 54 120
+2019-05-05 17:11:06,079 [Server thread] INFO Treasure2 | AbstractChestGenerator.java:167 | CHEATER! RARE chest at coords: -904 77 280
+2019-05-05 17:11:09,532 [Server thread] INFO Treasure2 | AbstractChestGenerator.java:167 | CHEATER! UNCOMMON chest at coords: -968 100 344
+2019-05-05 17:11:14,028 [Server thread] INFO Treasure2 | AbstractChestGenerator.java:167 | CHEATER! COMMON chest at coords: -1032 51 392
+2019-05-05 17:11:17,178 [Server thread] INFO Treasure2 | AbstractChestGenerator.java:167 | CHEATER! COMMON chest at coords: -1000 69 520
+2019-05-05 17:11:22,565 [Server thread] INFO Treasure2 | AbstractChestGenerator.java:167 | CHEATER! EPIC chest at coords: -1144 42 312
+2019-05-05 17:11:26,949 [Server thread] INFO Treasure2 | AbstractChestGenerator.java:167 | CHEATER! SCARCE chest at coords: -1176 61 504
+2019-05-05 17:11:29,457 [Server thread] INFO Treasure2 | AbstractChestGenerator.java:167 | CHEATER! COMMON chest at coords: 104 64 456
+2019-05-05 17:11:34,797 [Server thread] INFO Treasure2 | AbstractChestGenerator.java:167 | CHEATER! UNCOMMON chest at coords: 472 51 -104
+2019-05-05 17:11:40,409 [Server thread] INFO Treasure2 | AbstractChestGenerator.java:167 | CHEATER! COMMON chest at coords: 248 89 472
+2019-05-05 17:11:53,520 [Server thread] INFO Treasure2 | SimpleWellGenerator.java:85 | CHEATER! Wishing Well at coords: -328 54 -472
+2019-05-05 17:11:58,591 [Server thread] INFO Treasure2 | AbstractChestGenerator.java:167 | CHEATER! COMMON chest at coords: 504 61 312
+2019-05-05 17:12:05,872 [Server thread] INFO Treasure2 | AbstractChestGenerator.java:167 | CHEATER! SCARCE chest at coords: -328 62 -488
+2019-05-05 17:12:11,269 [Server thread] INFO Treasure2 | AbstractChestGenerator.java:167 | CHEATER! COMMON chest at coords: 520 53 392
+2019-05-05 17:12:17,501 [Server thread] INFO Treasure2 | AbstractChestGenerator.java:167 | CHEATER! COMMON chest at coords: 360 61 520
+2019-05-05 17:12:21,103 [Server thread] INFO Treasure2 | SimpleWellGenerator.java:85 | CHEATER! Wishing Well at coords: 472 64 -504
+2019-05-05 17:12:22,903 [Server thread] INFO Treasure2 | AbstractChestGenerator.java:167 | CHEATER! SCARCE chest at coords: 536 65 8
+2019-05-05 17:12:29,601 [Server thread] INFO Treasure2 | AbstractChestGenerator.java:167 | CHEATER! COMMON chest at coords: 56 85 536
+2019-05-05 17:12:35,708 [Server thread] INFO Treasure2 | AbstractChestGenerator.java:167 | CHEATER! COMMON chest at coords: 552 67 -152
+2019-05-05 17:12:43,449 [Server thread] INFO Treasure2 | AbstractChestGenerator.java:167 | CHEATER! COMMON chest at coords: 184 68 552
+2019-05-05 17:12:48,252 [Server thread] INFO Treasure2 | WoodDrawWellGenerator.java:79 | CHEATER! Wishing Well at coords: 568 66 -488
+2019-05-05 17:12:48,858 [Server thread] INFO Treasure2 | AbstractChestGenerator.java:167 | CHEATER! SCARCE chest at coords: 568 42 -296
+2019-05-05 17:12:58,109 [Server thread] INFO Treasure2 | AbstractChestGenerator.java:167 | CHEATER! UNCOMMON chest at coords: 440 62 568
+2019-05-05 17:13:04,992 [Server thread] INFO Treasure2 | AbstractChestGenerator.java:167 | CHEATER! UNCOMMON chest at coords: 584 44 72
+2019-05-05 17:13:12,768 [Server thread] INFO Treasure2 | AbstractChestGenerator.java:167 | CHEATER! COMMON chest at coords: 568 60 584
+2019-05-05 17:13:13,804 [Server thread] INFO Treasure2 | CanopyWellGenerator.java:79 | CHEATER! Wishing Well at coords: -264 69 -568
+2019-05-05 17:13:17,921 [Server thread] INFO Treasure2 | AbstractChestGenerator.java:167 | CHEATER! COMMON chest at coords: -1000 54 216
+2019-05-05 17:15:50,298 [Server thread] WARN Treasure2 | AbstractChestGenerator.java:113 | Unable to select a lootTable.
+2019-05-05 17:15:52,209 [Server thread] ERROR Treasure2 | TreasureLootTableManager.java:196 | Couldn't load loot table treasure2:armor/uncommon from jar:file:/C:/Users/amarc/AppData/Roaming/.minecraft/mods/Treasure2-mc1.12.2-f14.23.5.2768-v1.3.0.jar!/assets/treasure2/loot_tables/armor/uncommon.json
+com.google.gson.JsonSyntaxException: Expected name to be an item, was unknown string 'sgs_metals:bone_chestplate'
+	at net.minecraft.util.JsonUtils.func_188172_b(SourceFile:124) ~[rc.class:?]
+	at net.minecraft.util.JsonUtils.func_188180_i(SourceFile:135) ~[rc.class:?]
+	at com.someguyssoftware.treasure2.loot.TreasureLootEntryItem.deserialize(TreasureLootEntryItem.java:100) ~[TreasureLootEntryItem.class:?]
+	at com.someguyssoftware.treasure2.loot.TreasureLootEntry$Serializer.deserialize(TreasureLootEntry.java:92) ~[TreasureLootEntry$Serializer.class:?]
+	at com.someguyssoftware.treasure2.loot.TreasureLootEntry$Serializer.deserialize(TreasureLootEntry.java:72) ~[TreasureLootEntry$Serializer.class:?]
+	at com.google.gson.internal.bind.TreeTypeAdapter.read(TreeTypeAdapter.java:69) ~[TreeTypeAdapter.class:?]
+	at com.google.gson.internal.bind.TypeAdapterRuntimeTypeWrapper.read(TypeAdapterRuntimeTypeWrapper.java:41) ~[TypeAdapterRuntimeTypeWrapper.class:?]
+	at com.google.gson.internal.bind.ArrayTypeAdapter.read(ArrayTypeAdapter.java:72) ~[ArrayTypeAdapter.class:?]
+	at com.google.gson.Gson.fromJson(Gson.java:887) ~[Gson.class:?]
+	at com.google.gson.Gson.fromJson(Gson.java:952) ~[Gson.class:?]
+	at com.google.gson.internal.bind.TreeTypeAdapter$GsonContextImpl.deserialize(TreeTypeAdapter.java:162) ~[TreeTypeAdapter$GsonContextImpl.class:?]
+	at net.minecraft.util.JsonUtils.func_188179_a(SourceFile:439) ~[rc.class:?]
+	at net.minecraft.util.JsonUtils.func_188174_a(SourceFile:447) ~[rc.class:?]
+	at com.someguyssoftware.treasure2.loot.TreasureLootPool$Serializer.deserialize(TreasureLootPool.java:169) ~[TreasureLootPool$Serializer.class:?]
+	at com.someguyssoftware.treasure2.loot.TreasureLootPool$Serializer.deserialize(TreasureLootPool.java:165) ~[TreasureLootPool$Serializer.class:?]
+	at com.google.gson.internal.bind.TreeTypeAdapter.read(TreeTypeAdapter.java:69) ~[TreeTypeAdapter.class:?]
+	at com.google.gson.internal.bind.TypeAdapterRuntimeTypeWrapper.read(TypeAdapterRuntimeTypeWrapper.java:41) ~[TypeAdapterRuntimeTypeWrapper.class:?]
+	at com.google.gson.internal.bind.ArrayTypeAdapter.read(ArrayTypeAdapter.java:72) ~[ArrayTypeAdapter.class:?]
+	at com.google.gson.Gson.fromJson(Gson.java:887) ~[Gson.class:?]
+	at com.google.gson.Gson.fromJson(Gson.java:952) ~[Gson.class:?]
+	at com.google.gson.internal.bind.TreeTypeAdapter$GsonContextImpl.deserialize(TreeTypeAdapter.java:162) ~[TreeTypeAdapter$GsonContextImpl.class:?]
+	at net.minecraft.util.JsonUtils.func_188179_a(SourceFile:439) ~[rc.class:?]
+	at net.minecraft.util.JsonUtils.func_188177_a(SourceFile:455) ~[rc.class:?]
+	at com.someguyssoftware.treasure2.loot.TreasureLootTable$Serializer.deserialize(TreasureLootTable.java:206) ~[TreasureLootTable$Serializer.class:?]
+	at com.someguyssoftware.treasure2.loot.TreasureLootTable$Serializer.deserialize(TreasureLootTable.java:203) ~[TreasureLootTable$Serializer.class:?]
+	at com.google.gson.internal.bind.TreeTypeAdapter.read(TreeTypeAdapter.java:69) ~[TreeTypeAdapter.class:?]
+	at com.google.gson.Gson.fromJson(Gson.java:887) ~[Gson.class:?]
+	at com.google.gson.Gson.fromJson(Gson.java:852) ~[Gson.class:?]
+	at com.google.gson.Gson.fromJson(Gson.java:801) ~[Gson.class:?]
+	at com.google.gson.Gson.fromJson(Gson.java:773) ~[Gson.class:?]
+	at com.someguyssoftware.treasure2.loot.TreasureLootTableManager.hookLoadLootTable(TreasureLootTableManager.java:216) ~[TreasureLootTableManager.class:?]
+	at com.someguyssoftware.treasure2.loot.TreasureLootTableManager$Loader.loadBuiltinLootTable(TreasureLootTableManager.java:193) [TreasureLootTableManager$Loader.class:?]
+	at com.someguyssoftware.treasure2.loot.TreasureLootTableManager$Loader.load(TreasureLootTableManager.java:118) [TreasureLootTableManager$Loader.class:?]
+	at com.someguyssoftware.treasure2.loot.TreasureLootTableManager$Loader.load(TreasureLootTableManager.java:104) [TreasureLootTableManager$Loader.class:?]
+	at com.google.common.cache.LocalCache$LoadingValueReference.loadFuture(LocalCache.java:3716) [guava-21.0.jar:?]
+	at com.google.common.cache.LocalCache$Segment.loadSync(LocalCache.java:2424) [guava-21.0.jar:?]
+	at com.google.common.cache.LocalCache$Segment.lockedGetOrLoad(LocalCache.java:2298) [guava-21.0.jar:?]
+	at com.google.common.cache.LocalCache$Segment.get(LocalCache.java:2211) [guava-21.0.jar:?]
+	at com.google.common.cache.LocalCache.get(LocalCache.java:4154) [guava-21.0.jar:?]
+	at com.google.common.cache.LocalCache.getOrLoad(LocalCache.java:4158) [guava-21.0.jar:?]
+	at com.google.common.cache.LocalCache$LocalLoadingCache.get(LocalCache.java:5147) [guava-21.0.jar:?]
+	at com.google.common.cache.LocalCache$LocalLoadingCache.getUnchecked(LocalCache.java:5153) [guava-21.0.jar:?]
+	at com.someguyssoftware.treasure2.loot.TreasureLootTableManager.getLootTableFromLocation(TreasureLootTableManager.java:91) [TreasureLootTableManager.class:?]
+	at com.someguyssoftware.treasure2.loot.TreasureLootEntryTable.addLoot(TreasureLootEntryTable.java:44) [TreasureLootEntryTable.class:?]
+	at com.someguyssoftware.treasure2.loot.TreasureLootPool.createLootRoll(TreasureLootPool.java:76) [TreasureLootPool.class:?]
+	at com.someguyssoftware.treasure2.loot.TreasureLootPool.generateLoot(TreasureLootPool.java:91) [TreasureLootPool.class:?]
+	at com.someguyssoftware.treasure2.loot.TreasureLootTable.generateLootFromPools(TreasureLootTable.java:54) [TreasureLootTable.class:?]
+	at com.someguyssoftware.treasure2.loot.TreasureLootTable.fillInventory(TreasureLootTable.java:72) [TreasureLootTable.class:?]
+	at com.someguyssoftware.treasure2.generator.chest.AbstractChestGenerator.generate(AbstractChestGenerator.java:156) [AbstractChestGenerator.class:?]
+	at com.someguyssoftware.treasure2.worldgen.ChestWorldGenerator.generateSurface(ChestWorldGenerator.java:216) [ChestWorldGenerator.class:?]
+	at com.someguyssoftware.treasure2.worldgen.ChestWorldGenerator.generate(ChestWorldGenerator.java:126) [ChestWorldGenerator.class:?]
+	at net.minecraftforge.fml.common.registry.GameRegistry.generateWorld(GameRegistry.java:167) [GameRegistry.class:?]
+	at net.minecraft.world.chunk.Chunk.func_186034_a(Chunk.java:1020) [axw.class:?]
+	at net.minecraft.world.chunk.Chunk.func_186030_a(Chunk.java:999) [axw.class:?]
+	at net.minecraft.world.gen.ChunkProviderServer.func_186025_d(ChunkProviderServer.java:157) [on.class:?]
+	at net.minecraft.server.MinecraftServer.func_71222_d(MinecraftServer.java:344) [MinecraftServer.class:?]
+	at net.minecraft.server.integrated.IntegratedServer.func_71247_a(IntegratedServer.java:186) [chd.class:?]
+	at net.minecraft.server.integrated.IntegratedServer.func_71197_b(IntegratedServer.java:209) [chd.class:?]
+	at net.minecraft.server.MinecraftServer.run(MinecraftServer.java:486) [MinecraftServer.class:?]
+	at java.lang.Thread.run(Unknown Source) [?:1.8.0_211]
+2019-05-05 17:15:52,222 [Server thread] INFO Treasure2 | AbstractChestGenerator.java:167 | CHEATER! UNCOMMON chest at coords: -472 237 -616
+2019-05-05 17:15:53,972 [Server thread] INFO Treasure2 | AbstractChestGenerator.java:167 | CHEATER! COMMON chest at coords: -408 123 -424
+2019-05-05 17:15:55,515 [Server thread] INFO Treasure2 | AbstractChestGenerator.java:167 | CHEATER! UNCOMMON chest at coords: -328 205 -728
+2019-05-05 17:15:57,205 [Server thread] INFO Treasure2 | AbstractChestGenerator.java:167 | CHEATER! COMMON chest at coords: -264 78 -648
+2019-05-05 17:15:57,730 [Server thread] INFO Treasure2 | CanopyWellGenerator.java:79 | CHEATER! Wishing Well at coords: -248 237 -520
+2019-05-05 17:15:58,859 [Server thread] INFO Treasure2 | AbstractChestGenerator.java:167 | CHEATER! COMMON chest at coords: -200 136 -568
+2019-05-05 17:16:00,540 [Server thread] INFO Treasure2 | AbstractChestGenerator.java:167 | CHEATER! UNCOMMON chest at coords: -136 164 -472
+2019-05-05 20:11:57,358 [Server thread] INFO Treasure2 | CanopyWellGenerator.java:79 | CHEATER! Wishing Well at coords: -1528 4 -152
+2019-05-05 20:16:44,407 [Server thread] INFO Treasure2 | WoodDrawWellGenerator.java:79 | CHEATER! Wishing Well at coords: 392 4 328
+2019-05-05 20:18:57,516 [Server thread] INFO Treasure2 | WoodDrawWellGenerator.java:79 | CHEATER! Wishing Well at coords: 232 4 648
+2019-05-05 20:38:22,686 [Server thread] ERROR Treasure2 | TreasureLootTableManager.java:196 | Couldn't load loot table treasure2:armor/uncommon from jar:file:/C:/Users/amarc/AppData/Roaming/.minecraft/mods/Treasure2-mc1.12.2-f14.23.5.2768-v1.3.0.jar!/assets/treasure2/loot_tables/armor/uncommon.json
+com.google.gson.JsonSyntaxException: Expected name to be an item, was unknown string 'sgs_metals:bone_chestplate'
+	at net.minecraft.util.JsonUtils.func_188172_b(SourceFile:124) ~[rc.class:?]
+	at net.minecraft.util.JsonUtils.func_188180_i(SourceFile:135) ~[rc.class:?]
+	at com.someguyssoftware.treasure2.loot.TreasureLootEntryItem.deserialize(TreasureLootEntryItem.java:100) ~[TreasureLootEntryItem.class:?]
+	at com.someguyssoftware.treasure2.loot.TreasureLootEntry$Serializer.deserialize(TreasureLootEntry.java:92) ~[TreasureLootEntry$Serializer.class:?]
+	at com.someguyssoftware.treasure2.loot.TreasureLootEntry$Serializer.deserialize(TreasureLootEntry.java:72) ~[TreasureLootEntry$Serializer.class:?]
+	at com.google.gson.internal.bind.TreeTypeAdapter.read(TreeTypeAdapter.java:69) ~[TreeTypeAdapter.class:?]
+	at com.google.gson.internal.bind.TypeAdapterRuntimeTypeWrapper.read(TypeAdapterRuntimeTypeWrapper.java:41) ~[TypeAdapterRuntimeTypeWrapper.class:?]
+	at com.google.gson.internal.bind.ArrayTypeAdapter.read(ArrayTypeAdapter.java:72) ~[ArrayTypeAdapter.class:?]
+	at com.google.gson.Gson.fromJson(Gson.java:887) ~[Gson.class:?]
+	at com.google.gson.Gson.fromJson(Gson.java:952) ~[Gson.class:?]
+	at com.google.gson.internal.bind.TreeTypeAdapter$GsonContextImpl.deserialize(TreeTypeAdapter.java:162) ~[TreeTypeAdapter$GsonContextImpl.class:?]
+	at net.minecraft.util.JsonUtils.func_188179_a(SourceFile:439) ~[rc.class:?]
+	at net.minecraft.util.JsonUtils.func_188174_a(SourceFile:447) ~[rc.class:?]
+	at com.someguyssoftware.treasure2.loot.TreasureLootPool$Serializer.deserialize(TreasureLootPool.java:169) ~[TreasureLootPool$Serializer.class:?]
+	at com.someguyssoftware.treasure2.loot.TreasureLootPool$Serializer.deserialize(TreasureLootPool.java:165) ~[TreasureLootPool$Serializer.class:?]
+	at com.google.gson.internal.bind.TreeTypeAdapter.read(TreeTypeAdapter.java:69) ~[TreeTypeAdapter.class:?]
+	at com.google.gson.internal.bind.TypeAdapterRuntimeTypeWrapper.read(TypeAdapterRuntimeTypeWrapper.java:41) ~[TypeAdapterRuntimeTypeWrapper.class:?]
+	at com.google.gson.internal.bind.ArrayTypeAdapter.read(ArrayTypeAdapter.java:72) ~[ArrayTypeAdapter.class:?]
+	at com.google.gson.Gson.fromJson(Gson.java:887) ~[Gson.class:?]
+	at com.google.gson.Gson.fromJson(Gson.java:952) ~[Gson.class:?]
+	at com.google.gson.internal.bind.TreeTypeAdapter$GsonContextImpl.deserialize(TreeTypeAdapter.java:162) ~[TreeTypeAdapter$GsonContextImpl.class:?]
+	at net.minecraft.util.JsonUtils.func_188179_a(SourceFile:439) ~[rc.class:?]
+	at net.minecraft.util.JsonUtils.func_188177_a(SourceFile:455) ~[rc.class:?]
+	at com.someguyssoftware.treasure2.loot.TreasureLootTable$Serializer.deserialize(TreasureLootTable.java:206) ~[TreasureLootTable$Serializer.class:?]
+	at com.someguyssoftware.treasure2.loot.TreasureLootTable$Serializer.deserialize(TreasureLootTable.java:203) ~[TreasureLootTable$Serializer.class:?]
+	at com.google.gson.internal.bind.TreeTypeAdapter.read(TreeTypeAdapter.java:69) ~[TreeTypeAdapter.class:?]
+	at com.google.gson.Gson.fromJson(Gson.java:887) ~[Gson.class:?]
+	at com.google.gson.Gson.fromJson(Gson.java:852) ~[Gson.class:?]
+	at com.google.gson.Gson.fromJson(Gson.java:801) ~[Gson.class:?]
+	at com.google.gson.Gson.fromJson(Gson.java:773) ~[Gson.class:?]
+	at com.someguyssoftware.treasure2.loot.TreasureLootTableManager.hookLoadLootTable(TreasureLootTableManager.java:216) ~[TreasureLootTableManager.class:?]
+	at com.someguyssoftware.treasure2.loot.TreasureLootTableManager$Loader.loadBuiltinLootTable(TreasureLootTableManager.java:193) [TreasureLootTableManager$Loader.class:?]
+	at com.someguyssoftware.treasure2.loot.TreasureLootTableManager$Loader.load(TreasureLootTableManager.java:118) [TreasureLootTableManager$Loader.class:?]
+	at com.someguyssoftware.treasure2.loot.TreasureLootTableManager$Loader.load(TreasureLootTableManager.java:104) [TreasureLootTableManager$Loader.class:?]
+	at com.google.common.cache.LocalCache$LoadingValueReference.loadFuture(LocalCache.java:3716) [guava-21.0.jar:?]
+	at com.google.common.cache.LocalCache$Segment.loadSync(LocalCache.java:2424) [guava-21.0.jar:?]
+	at com.google.common.cache.LocalCache$Segment.lockedGetOrLoad(LocalCache.java:2298) [guava-21.0.jar:?]
+	at com.google.common.cache.LocalCache$Segment.get(LocalCache.java:2211) [guava-21.0.jar:?]
+	at com.google.common.cache.LocalCache.get(LocalCache.java:4154) [guava-21.0.jar:?]
+	at com.google.common.cache.LocalCache.getOrLoad(LocalCache.java:4158) [guava-21.0.jar:?]
+	at com.google.common.cache.LocalCache$LocalLoadingCache.get(LocalCache.java:5147) [guava-21.0.jar:?]
+	at com.google.common.cache.LocalCache$LocalLoadingCache.getUnchecked(LocalCache.java:5153) [guava-21.0.jar:?]
+	at com.someguyssoftware.treasure2.loot.TreasureLootTableManager.getLootTableFromLocation(TreasureLootTableManager.java:91) [TreasureLootTableManager.class:?]
+	at com.someguyssoftware.treasure2.loot.TreasureLootEntryTable.addLoot(TreasureLootEntryTable.java:44) [TreasureLootEntryTable.class:?]
+	at com.someguyssoftware.treasure2.loot.TreasureLootPool.createLootRoll(TreasureLootPool.java:76) [TreasureLootPool.class:?]
+	at com.someguyssoftware.treasure2.loot.TreasureLootPool.generateLoot(TreasureLootPool.java:91) [TreasureLootPool.class:?]
+	at com.someguyssoftware.treasure2.loot.TreasureLootTable.generateLootFromPools(TreasureLootTable.java:54) [TreasureLootTable.class:?]
+	at com.someguyssoftware.treasure2.loot.TreasureLootTable.fillInventory(TreasureLootTable.java:72) [TreasureLootTable.class:?]
+	at com.someguyssoftware.treasure2.generator.chest.AbstractChestGenerator.generate(AbstractChestGenerator.java:156) [AbstractChestGenerator.class:?]
+	at com.someguyssoftware.treasure2.worldgen.ChestWorldGenerator.generateSurface(ChestWorldGenerator.java:216) [ChestWorldGenerator.class:?]
+	at com.someguyssoftware.treasure2.worldgen.ChestWorldGenerator.generate(ChestWorldGenerator.java:126) [ChestWorldGenerator.class:?]
+	at net.minecraftforge.fml.common.registry.GameRegistry.generateWorld(GameRegistry.java:167) [GameRegistry.class:?]
+	at net.minecraft.world.chunk.Chunk.func_186034_a(Chunk.java:1020) [axw.class:?]
+	at net.minecraft.world.chunk.Chunk.func_186030_a(Chunk.java:999) [axw.class:?]
+	at net.minecraft.world.gen.ChunkProviderServer.func_186025_d(ChunkProviderServer.java:157) [on.class:?]
+	at net.minecraft.server.MinecraftServer.func_71222_d(MinecraftServer.java:344) [MinecraftServer.class:?]
+	at net.minecraft.server.integrated.IntegratedServer.func_71247_a(IntegratedServer.java:186) [chd.class:?]
+	at net.minecraft.server.integrated.IntegratedServer.func_71197_b(IntegratedServer.java:209) [chd.class:?]
+	at net.minecraft.server.MinecraftServer.run(MinecraftServer.java:486) [MinecraftServer.class:?]
+	at java.lang.Thread.run(Unknown Source) [?:1.8.0_211]
+2019-05-05 20:38:22,701 [Server thread] INFO Treasure2 | AbstractChestGenerator.java:167 | CHEATER! COMMON chest at coords: -200 53 -8
+2019-05-05 20:38:24,929 [Server thread] INFO Treasure2 | AbstractChestGenerator.java:167 | CHEATER! COMMON chest at coords: -136 56 72
+2019-05-05 20:38:27,372 [Server thread] INFO Treasure2 | AbstractChestGenerator.java:167 | CHEATER! SCARCE chest at coords: -72 38 184
+2019-05-05 20:38:29,702 [Server thread] INFO Treasure2 | AbstractChestGenerator.java:167 | CHEATER! UNCOMMON chest at coords: 8 54 -72
+2019-05-05 20:38:31,848 [Server thread] INFO Treasure2 | SimpleWellGenerator.java:85 | CHEATER! Wishing Well at coords: 72 68 -56
+2019-05-05 20:38:32,301 [Server thread] INFO Treasure2 | AbstractChestGenerator.java:167 | CHEATER! RARE chest at coords: 88 46 -56
+2019-05-05 20:48:13,053 [Server thread] INFO Treasure2 | AbstractChestGenerator.java:167 | CHEATER! COMMON chest at coords: 200 55 216
+2019-05-05 20:48:13,174 [Server thread] INFO Treasure2 | AbstractChestGenerator.java:167 | CHEATER! SCARCE chest at coords: 168 40 -40
+2019-05-05 20:48:17,946 [Server thread] INFO Treasure2 | AbstractChestGenerator.java:167 | CHEATER! COMMON chest at coords: 264 55 56
+2019-05-05 20:48:26,235 [Server thread] INFO Treasure2 | WoodDrawWellGenerator.java:79 | CHEATER! Wishing Well at coords: 312 67 -72
+2019-05-05 20:48:27,414 [Server thread] INFO Treasure2 | AbstractChestGenerator.java:167 | CHEATER! COMMON chest at coords: 312 54 168
+2019-05-05 20:48:59,159 [Server thread] INFO Treasure2 | AbstractChestGenerator.java:167 | CHEATER! COMMON chest at coords: 408 58 120
+2019-05-05 20:49:04,810 [Server thread] INFO Treasure2 | AbstractChestGenerator.java:167 | CHEATER! COMMON chest at coords: 312 68 264
+2019-05-05 20:49:32,667 [Server thread] INFO Treasure2 | AbstractChestGenerator.java:167 | CHEATER! UNCOMMON chest at coords: 312 89 344
+2019-05-05 20:49:48,144 [Server thread] INFO Treasure2 | AbstractChestGenerator.java:167 | CHEATER! COMMON chest at coords: 520 65 88
+2019-05-05 20:49:50,843 [Server thread] INFO Treasure2 | SimpleWellGenerator.java:85 | CHEATER! Wishing Well at coords: 568 68 264
+2019-05-05 20:49:51,831 [Server thread] INFO Treasure2 | AbstractChestGenerator.java:167 | CHEATER! SCARCE chest at coords: 440 40 408
+2019-05-05 20:50:07,666 [Server thread] INFO Treasure2 | AbstractChestGenerator.java:167 | CHEATER! COMMON chest at coords: 632 51 328
+2019-05-05 20:50:12,228 [Server thread] INFO Treasure2 | AbstractChestGenerator.java:167 | CHEATER! RARE chest at coords: 488 45 488
+2019-05-06 13:47:49,921 [Server thread] ERROR Treasure2 | TreasureLootTables.java:444 | Unable to locate resource /loot_tables/mocreatures/potions
+2019-05-06 13:47:54,653 [Server thread] INFO Treasure2 | AbstractChestGenerator.java:167 | CHEATER! SCARCE chest at coords: -120 51 1512
+2019-05-06 13:47:57,594 [Server thread] INFO Treasure2 | SimpleWellGenerator.java:85 | CHEATER! Wishing Well at coords: 24 64 1224
+2019-05-06 13:47:58,163 [Server thread] WARN Treasure2 | TreasureLootTable.java:79 | Tried to over-fill a container
+2019-05-06 13:47:58,168 [Server thread] INFO Treasure2 | AbstractChestGenerator.java:167 | CHEATER! RARE chest at coords: 40 32 1400
+2019-05-06 13:57:30,478 [Server thread] WARN Treasure2 | TreasureLootTable.java:79 | Tried to over-fill a container
+2019-05-06 13:57:30,480 [Server thread] INFO Treasure2 | AbstractChestGenerator.java:167 | CHEATER! SCARCE chest at coords: -152 33 1592
+2019-05-06 13:58:05,606 [Server thread] INFO Treasure2 | AbstractChestGenerator.java:167 | CHEATER! EPIC chest at coords: -24 50 1704
+2019-05-06 13:58:10,180 [Server thread] WARN Treasure2 | TreasureLootTable.java:79 | Tried to over-fill a container
+2019-05-06 13:58:10,184 [Server thread] INFO Treasure2 | AbstractChestGenerator.java:167 | CHEATER! SCARCE chest at coords: -72 50 1768
+2019-05-06 14:03:27,345 [Server thread] INFO Treasure2 | WoodDrawWellGenerator.java:79 | CHEATER! Wishing Well at coords: 344 4 -264
+2019-05-06 14:03:29,099 [Server thread] INFO Treasure2 | CanopyWellGenerator.java:79 | CHEATER! Wishing Well at coords: 232 4 -1080
+2019-05-06 14:06:48,385 [Server thread] INFO Treasure2 | AbstractChestGenerator.java:167 | CHEATER! COMMON chest at coords: -184 63 -104
+2019-05-06 14:06:50,062 [Server thread] ERROR Treasure2 | TreasureLootTableManager.java:196 | Couldn't load loot table treasure2:armor/uncommon from jar:file:/C:/Users/amarc/AppData/Roaming/.minecraft/mods/Treasure2-mc1.12.2-f14.23.5.2768-v1.3.0.jar!/assets/treasure2/loot_tables/armor/uncommon.json
+com.google.gson.JsonSyntaxException: Expected name to be an item, was unknown string 'sgs_metals:bone_chestplate'
+	at net.minecraft.util.JsonUtils.func_188172_b(SourceFile:124) ~[rc.class:?]
+	at net.minecraft.util.JsonUtils.func_188180_i(SourceFile:135) ~[rc.class:?]
+	at com.someguyssoftware.treasure2.loot.TreasureLootEntryItem.deserialize(TreasureLootEntryItem.java:100) ~[TreasureLootEntryItem.class:?]
+	at com.someguyssoftware.treasure2.loot.TreasureLootEntry$Serializer.deserialize(TreasureLootEntry.java:92) ~[TreasureLootEntry$Serializer.class:?]
+	at com.someguyssoftware.treasure2.loot.TreasureLootEntry$Serializer.deserialize(TreasureLootEntry.java:72) ~[TreasureLootEntry$Serializer.class:?]
+	at com.google.gson.internal.bind.TreeTypeAdapter.read(TreeTypeAdapter.java:69) ~[TreeTypeAdapter.class:?]
+	at com.google.gson.internal.bind.TypeAdapterRuntimeTypeWrapper.read(TypeAdapterRuntimeTypeWrapper.java:41) ~[TypeAdapterRuntimeTypeWrapper.class:?]
+	at com.google.gson.internal.bind.ArrayTypeAdapter.read(ArrayTypeAdapter.java:72) ~[ArrayTypeAdapter.class:?]
+	at com.google.gson.Gson.fromJson(Gson.java:887) ~[Gson.class:?]
+	at com.google.gson.Gson.fromJson(Gson.java:952) ~[Gson.class:?]
+	at com.google.gson.internal.bind.TreeTypeAdapter$GsonContextImpl.deserialize(TreeTypeAdapter.java:162) ~[TreeTypeAdapter$GsonContextImpl.class:?]
+	at net.minecraft.util.JsonUtils.func_188179_a(SourceFile:439) ~[rc.class:?]
+	at net.minecraft.util.JsonUtils.func_188174_a(SourceFile:447) ~[rc.class:?]
+	at com.someguyssoftware.treasure2.loot.TreasureLootPool$Serializer.deserialize(TreasureLootPool.java:169) ~[TreasureLootPool$Serializer.class:?]
+	at com.someguyssoftware.treasure2.loot.TreasureLootPool$Serializer.deserialize(TreasureLootPool.java:165) ~[TreasureLootPool$Serializer.class:?]
+	at com.google.gson.internal.bind.TreeTypeAdapter.read(TreeTypeAdapter.java:69) ~[TreeTypeAdapter.class:?]
+	at com.google.gson.internal.bind.TypeAdapterRuntimeTypeWrapper.read(TypeAdapterRuntimeTypeWrapper.java:41) ~[TypeAdapterRuntimeTypeWrapper.class:?]
+	at com.google.gson.internal.bind.ArrayTypeAdapter.read(ArrayTypeAdapter.java:72) ~[ArrayTypeAdapter.class:?]
+	at com.google.gson.Gson.fromJson(Gson.java:887) ~[Gson.class:?]
+	at com.google.gson.Gson.fromJson(Gson.java:952) ~[Gson.class:?]
+	at com.google.gson.internal.bind.TreeTypeAdapter$GsonContextImpl.deserialize(TreeTypeAdapter.java:162) ~[TreeTypeAdapter$GsonContextImpl.class:?]
+	at net.minecraft.util.JsonUtils.func_188179_a(SourceFile:439) ~[rc.class:?]
+	at net.minecraft.util.JsonUtils.func_188177_a(SourceFile:455) ~[rc.class:?]
+	at com.someguyssoftware.treasure2.loot.TreasureLootTable$Serializer.deserialize(TreasureLootTable.java:206) ~[TreasureLootTable$Serializer.class:?]
+	at com.someguyssoftware.treasure2.loot.TreasureLootTable$Serializer.deserialize(TreasureLootTable.java:203) ~[TreasureLootTable$Serializer.class:?]
+	at com.google.gson.internal.bind.TreeTypeAdapter.read(TreeTypeAdapter.java:69) ~[TreeTypeAdapter.class:?]
+	at com.google.gson.Gson.fromJson(Gson.java:887) ~[Gson.class:?]
+	at com.google.gson.Gson.fromJson(Gson.java:852) ~[Gson.class:?]
+	at com.google.gson.Gson.fromJson(Gson.java:801) ~[Gson.class:?]
+	at com.google.gson.Gson.fromJson(Gson.java:773) ~[Gson.class:?]
+	at com.someguyssoftware.treasure2.loot.TreasureLootTableManager.hookLoadLootTable(TreasureLootTableManager.java:216) ~[TreasureLootTableManager.class:?]
+	at com.someguyssoftware.treasure2.loot.TreasureLootTableManager$Loader.loadBuiltinLootTable(TreasureLootTableManager.java:193) [TreasureLootTableManager$Loader.class:?]
+	at com.someguyssoftware.treasure2.loot.TreasureLootTableManager$Loader.load(TreasureLootTableManager.java:118) [TreasureLootTableManager$Loader.class:?]
+	at com.someguyssoftware.treasure2.loot.TreasureLootTableManager$Loader.load(TreasureLootTableManager.java:104) [TreasureLootTableManager$Loader.class:?]
+	at com.google.common.cache.LocalCache$LoadingValueReference.loadFuture(LocalCache.java:3716) [guava-21.0.jar:?]
+	at com.google.common.cache.LocalCache$Segment.loadSync(LocalCache.java:2424) [guava-21.0.jar:?]
+	at com.google.common.cache.LocalCache$Segment.lockedGetOrLoad(LocalCache.java:2298) [guava-21.0.jar:?]
+	at com.google.common.cache.LocalCache$Segment.get(LocalCache.java:2211) [guava-21.0.jar:?]
+	at com.google.common.cache.LocalCache.get(LocalCache.java:4154) [guava-21.0.jar:?]
+	at com.google.common.cache.LocalCache.getOrLoad(LocalCache.java:4158) [guava-21.0.jar:?]
+	at com.google.common.cache.LocalCache$LocalLoadingCache.get(LocalCache.java:5147) [guava-21.0.jar:?]
+	at com.google.common.cache.LocalCache$LocalLoadingCache.getUnchecked(LocalCache.java:5153) [guava-21.0.jar:?]
+	at com.someguyssoftware.treasure2.loot.TreasureLootTableManager.getLootTableFromLocation(TreasureLootTableManager.java:91) [TreasureLootTableManager.class:?]
+	at com.someguyssoftware.treasure2.loot.TreasureLootEntryTable.addLoot(TreasureLootEntryTable.java:44) [TreasureLootEntryTable.class:?]
+	at com.someguyssoftware.treasure2.loot.TreasureLootPool.createLootRoll(TreasureLootPool.java:76) [TreasureLootPool.class:?]
+	at com.someguyssoftware.treasure2.loot.TreasureLootPool.generateLoot(TreasureLootPool.java:91) [TreasureLootPool.class:?]
+	at com.someguyssoftware.treasure2.loot.TreasureLootTable.generateLootFromPools(TreasureLootTable.java:54) [TreasureLootTable.class:?]
+	at com.someguyssoftware.treasure2.loot.TreasureLootTable.fillInventory(TreasureLootTable.java:72) [TreasureLootTable.class:?]
+	at com.someguyssoftware.treasure2.generator.chest.AbstractChestGenerator.generate(AbstractChestGenerator.java:156) [AbstractChestGenerator.class:?]
+	at com.someguyssoftware.treasure2.worldgen.ChestWorldGenerator.generateSurface(ChestWorldGenerator.java:216) [ChestWorldGenerator.class:?]
+	at com.someguyssoftware.treasure2.worldgen.ChestWorldGenerator.generate(ChestWorldGenerator.java:126) [ChestWorldGenerator.class:?]
+	at net.minecraftforge.fml.common.registry.GameRegistry.generateWorld(GameRegistry.java:167) [GameRegistry.class:?]
+	at net.minecraft.world.chunk.Chunk.func_186034_a(Chunk.java:1020) [axw.class:?]
+	at net.minecraft.world.chunk.Chunk.func_186030_a(Chunk.java:990) [axw.class:?]
+	at net.minecraft.world.gen.ChunkProviderServer.func_186025_d(ChunkProviderServer.java:157) [on.class:?]
+	at net.minecraft.server.MinecraftServer.func_71222_d(MinecraftServer.java:344) [MinecraftServer.class:?]
+	at net.minecraft.server.integrated.IntegratedServer.func_71247_a(IntegratedServer.java:186) [chd.class:?]
+	at net.minecraft.server.integrated.IntegratedServer.func_71197_b(IntegratedServer.java:209) [chd.class:?]
+	at net.minecraft.server.MinecraftServer.run(MinecraftServer.java:486) [MinecraftServer.class:?]
+	at java.lang.Thread.run(Unknown Source) [?:1.8.0_211]
+2019-05-06 14:06:50,065 [Server thread] INFO Treasure2 | AbstractChestGenerator.java:167 | CHEATER! COMMON chest at coords: 632 57 344
+2019-05-06 14:06:50,619 [Server thread] INFO Treasure2 | AbstractChestGenerator.java:167 | CHEATER! UNCOMMON chest at coords: 680 53 424
+2019-05-06 14:06:51,197 [Server thread] INFO Treasure2 | AbstractChestGenerator.java:167 | CHEATER! COMMON chest at coords: 760 70 264
+2019-05-06 14:06:51,483 [Server thread] INFO Treasure2 | WoodDrawWellGenerator.java:79 | CHEATER! Wishing Well at coords: 808 70 344
+2019-05-06 14:06:51,764 [Server thread] INFO Treasure2 | AbstractChestGenerator.java:167 | CHEATER! UNCOMMON chest at coords: 840 53 280
+2019-05-06 14:06:52,326 [Server thread] INFO Treasure2 | AbstractChestGenerator.java:167 | CHEATER! COMMON chest at coords: 920 54 56
+2019-05-06 14:06:52,948 [Server thread] INFO Treasure2 | AbstractChestGenerator.java:167 | CHEATER! UNCOMMON chest at coords: 984 44 184
+2019-05-06 14:12:34,049 [Server thread] INFO Treasure2 | AbstractChestGenerator.java:167 | CHEATER! COMMON chest at coords: -568 63 -72
+2019-05-06 14:12:34,995 [Server thread] INFO Treasure2 | AbstractChestGenerator.java:167 | CHEATER! SCARCE chest at coords: -792 44 88
+2019-05-06 14:12:36,274 [Server thread] INFO Treasure2 | AbstractChestGenerator.java:167 | CHEATER! SCARCE chest at coords: -760 53 264
+2019-05-06 14:12:37,084 [Server thread] INFO Treasure2 | SimpleWellGenerator.java:85 | CHEATER! Wishing Well at coords: -728 70 136
+2019-05-06 14:12:38,445 [Server thread] INFO Treasure2 | AbstractChestGenerator.java:167 | CHEATER! COMMON chest at coords: -680 62 -8
+2019-05-06 14:12:40,705 [Server thread] INFO Treasure2 | AbstractChestGenerator.java:167 | CHEATER! COMMON chest at coords: -616 57 40
+2019-05-06 14:12:43,027 [Server thread] INFO Treasure2 | AbstractChestGenerator.java:167 | CHEATER! COMMON chest at coords: -552 55 248
+2019-05-06 14:12:45,253 [Server thread] INFO Treasure2 | AbstractChestGenerator.java:167 | CHEATER! RARE chest at coords: -456 50 24
+2019-05-06 14:13:25,406 [Server thread] INFO Treasure2 | AbstractChestGenerator.java:167 | CHEATER! SCARCE chest at coords: -824 39 -72
+2019-05-06 14:13:25,824 [Server thread] INFO Treasure2 | WoodDrawWellGenerator.java:79 | CHEATER! Wishing Well at coords: -776 70 -120
+2019-05-06 14:13:28,960 [Server thread] INFO Treasure2 | AbstractChestGenerator.java:167 | CHEATER! COMMON chest at coords: -872 56 -152
+2019-05-06 14:13:46,172 [Server thread] INFO Treasure2 | AbstractChestGenerator.java:167 | CHEATER! EPIC chest at coords: -680 36 -184
+2019-05-06 14:13:47,004 [Server thread] INFO Treasure2 | AbstractChestGenerator.java:167 | CHEATER! SCARCE chest at coords: -936 55 -8
+2019-05-06 14:22:33,985 [Server thread] INFO Treasure2 | AbstractChestGenerator.java:167 | CHEATER! SCARCE chest at coords: -952 59 216
+2019-05-06 14:22:53,283 [Server thread] WARN Treasure2 | TreasureLootTable.java:79 | Tried to over-fill a container
+2019-05-06 14:22:53,287 [Server thread] INFO Treasure2 | AbstractChestGenerator.java:167 | CHEATER! RARE chest at coords: -1048 30 8
+2019-05-06 14:22:58,017 [Server thread] INFO Treasure2 | CanopyWellGenerator.java:79 | CHEATER! Wishing Well at coords: -840 70 -216
+2019-05-06 14:22:58,063 [Server thread] INFO Treasure2 | AbstractChestGenerator.java:167 | CHEATER! UNCOMMON chest at coords: -1064 47 -216
+2019-05-06 14:22:58,085 [Server thread] INFO Treasure2 | AbstractChestGenerator.java:167 | CHEATER! COMMON chest at coords: -1048 63 -216
+2019-05-06 14:23:04,283 [Server thread] INFO Treasure2 | AbstractChestGenerator.java:167 | CHEATER! SCARCE chest at coords: -1032 60 -312
+2019-05-06 14:23:36,031 [Server thread] INFO Treasure2 | AbstractChestGenerator.java:167 | CHEATER! COMMON chest at coords: -888 61 -392
+2019-05-06 14:23:41,308 [Server thread] INFO Treasure2 | AbstractChestGenerator.java:167 | CHEATER! UNCOMMON chest at coords: -744 51 -440
+2019-05-06 14:23:45,434 [Server thread] INFO Treasure2 | AbstractChestGenerator.java:167 | CHEATER! SCARCE chest at coords: -792 51 -536
+2019-05-06 14:23:47,817 [Server thread] INFO Treasure2 | AbstractChestGenerator.java:167 | CHEATER! SCARCE chest at coords: -680 36 -520
+2019-05-06 14:23:47,887 [Server thread] INFO Treasure2 | CanopyWellGenerator.java:79 | CHEATER! Wishing Well at coords: -680 70 -504
+2019-05-06 14:23:49,043 [Server thread] INFO Treasure2 | AbstractChestGenerator.java:167 | CHEATER! EPIC chest at coords: -664 63 -424
+2019-05-06 14:23:54,566 [Server thread] INFO Treasure2 | AbstractChestGenerator.java:167 | CHEATER! COMMON chest at coords: -808 58 -648
+2019-05-06 14:23:58,217 [Server thread] INFO Treasure2 | AbstractChestGenerator.java:167 | CHEATER! COMMON chest at coords: -1032 50 -712
+2019-05-06 14:24:01,326 [Server thread] INFO Treasure2 | AbstractChestGenerator.java:167 | CHEATER! UNCOMMON chest at coords: -1064 57 -552
+2019-05-06 14:27:05,690 [Server thread] INFO Treasure2 | AbstractChestGenerator.java:167 | CHEATER! COMMON chest at coords: -760 70 -840
+2019-05-06 17:02:30,506 [Server thread] ERROR Treasure2 | TreasureLootTables.java:444 | Unable to locate resource /loot_tables/mocreatures/potions
+2019-05-06 17:32:44,723 [Server thread] INFO Treasure2 | WoodDrawWellGenerator.java:79 | CHEATER! Wishing Well at coords: -696 70 -696
+2019-05-06 17:32:51,533 [Server thread] INFO Treasure2 | AbstractChestGenerator.java:167 | CHEATER! COMMON chest at coords: -632 62 -664
+2019-05-06 17:37:19,118 [Server thread] ERROR Treasure2 | TreasureLootTableManager.java:196 | Couldn't load loot table treasure2:armor/uncommon from jar:file:/C:/Users/amarc/AppData/Roaming/.minecraft/mods/Treasure2-mc1.12.2-f14.23.5.2768-v1.3.0.jar!/assets/treasure2/loot_tables/armor/uncommon.json
+com.google.gson.JsonSyntaxException: Expected name to be an item, was unknown string 'sgs_metals:bone_chestplate'
+	at net.minecraft.util.JsonUtils.func_188172_b(SourceFile:124) ~[rc.class:?]
+	at net.minecraft.util.JsonUtils.func_188180_i(SourceFile:135) ~[rc.class:?]
+	at com.someguyssoftware.treasure2.loot.TreasureLootEntryItem.deserialize(TreasureLootEntryItem.java:100) ~[TreasureLootEntryItem.class:?]
+	at com.someguyssoftware.treasure2.loot.TreasureLootEntry$Serializer.deserialize(TreasureLootEntry.java:92) ~[TreasureLootEntry$Serializer.class:?]
+	at com.someguyssoftware.treasure2.loot.TreasureLootEntry$Serializer.deserialize(TreasureLootEntry.java:72) ~[TreasureLootEntry$Serializer.class:?]
+	at com.google.gson.internal.bind.TreeTypeAdapter.read(TreeTypeAdapter.java:69) ~[TreeTypeAdapter.class:?]
+	at com.google.gson.internal.bind.TypeAdapterRuntimeTypeWrapper.read(TypeAdapterRuntimeTypeWrapper.java:41) ~[TypeAdapterRuntimeTypeWrapper.class:?]
+	at com.google.gson.internal.bind.ArrayTypeAdapter.read(ArrayTypeAdapter.java:72) ~[ArrayTypeAdapter.class:?]
+	at com.google.gson.Gson.fromJson(Gson.java:887) ~[Gson.class:?]
+	at com.google.gson.Gson.fromJson(Gson.java:952) ~[Gson.class:?]
+	at com.google.gson.internal.bind.TreeTypeAdapter$GsonContextImpl.deserialize(TreeTypeAdapter.java:162) ~[TreeTypeAdapter$GsonContextImpl.class:?]
+	at net.minecraft.util.JsonUtils.func_188179_a(SourceFile:439) ~[rc.class:?]
+	at net.minecraft.util.JsonUtils.func_188174_a(SourceFile:447) ~[rc.class:?]
+	at com.someguyssoftware.treasure2.loot.TreasureLootPool$Serializer.deserialize(TreasureLootPool.java:169) ~[TreasureLootPool$Serializer.class:?]
+	at com.someguyssoftware.treasure2.loot.TreasureLootPool$Serializer.deserialize(TreasureLootPool.java:165) ~[TreasureLootPool$Serializer.class:?]
+	at com.google.gson.internal.bind.TreeTypeAdapter.read(TreeTypeAdapter.java:69) ~[TreeTypeAdapter.class:?]
+	at com.google.gson.internal.bind.TypeAdapterRuntimeTypeWrapper.read(TypeAdapterRuntimeTypeWrapper.java:41) ~[TypeAdapterRuntimeTypeWrapper.class:?]
+	at com.google.gson.internal.bind.ArrayTypeAdapter.read(ArrayTypeAdapter.java:72) ~[ArrayTypeAdapter.class:?]
+	at com.google.gson.Gson.fromJson(Gson.java:887) ~[Gson.class:?]
+	at com.google.gson.Gson.fromJson(Gson.java:952) ~[Gson.class:?]
+	at com.google.gson.internal.bind.TreeTypeAdapter$GsonContextImpl.deserialize(TreeTypeAdapter.java:162) ~[TreeTypeAdapter$GsonContextImpl.class:?]
+	at net.minecraft.util.JsonUtils.func_188179_a(SourceFile:439) ~[rc.class:?]
+	at net.minecraft.util.JsonUtils.func_188177_a(SourceFile:455) ~[rc.class:?]
+	at com.someguyssoftware.treasure2.loot.TreasureLootTable$Serializer.deserialize(TreasureLootTable.java:206) ~[TreasureLootTable$Serializer.class:?]
+	at com.someguyssoftware.treasure2.loot.TreasureLootTable$Serializer.deserialize(TreasureLootTable.java:203) ~[TreasureLootTable$Serializer.class:?]
+	at com.google.gson.internal.bind.TreeTypeAdapter.read(TreeTypeAdapter.java:69) ~[TreeTypeAdapter.class:?]
+	at com.google.gson.Gson.fromJson(Gson.java:887) ~[Gson.class:?]
+	at com.google.gson.Gson.fromJson(Gson.java:852) ~[Gson.class:?]
+	at com.google.gson.Gson.fromJson(Gson.java:801) ~[Gson.class:?]
+	at com.google.gson.Gson.fromJson(Gson.java:773) ~[Gson.class:?]
+	at com.someguyssoftware.treasure2.loot.TreasureLootTableManager.hookLoadLootTable(TreasureLootTableManager.java:216) ~[TreasureLootTableManager.class:?]
+	at com.someguyssoftware.treasure2.loot.TreasureLootTableManager$Loader.loadBuiltinLootTable(TreasureLootTableManager.java:193) [TreasureLootTableManager$Loader.class:?]
+	at com.someguyssoftware.treasure2.loot.TreasureLootTableManager$Loader.load(TreasureLootTableManager.java:118) [TreasureLootTableManager$Loader.class:?]
+	at com.someguyssoftware.treasure2.loot.TreasureLootTableManager$Loader.load(TreasureLootTableManager.java:104) [TreasureLootTableManager$Loader.class:?]
+	at com.google.common.cache.LocalCache$LoadingValueReference.loadFuture(LocalCache.java:3716) [guava-21.0.jar:?]
+	at com.google.common.cache.LocalCache$Segment.loadSync(LocalCache.java:2424) [guava-21.0.jar:?]
+	at com.google.common.cache.LocalCache$Segment.lockedGetOrLoad(LocalCache.java:2298) [guava-21.0.jar:?]
+	at com.google.common.cache.LocalCache$Segment.get(LocalCache.java:2211) [guava-21.0.jar:?]
+	at com.google.common.cache.LocalCache.get(LocalCache.java:4154) [guava-21.0.jar:?]
+	at com.google.common.cache.LocalCache.getOrLoad(LocalCache.java:4158) [guava-21.0.jar:?]
+	at com.google.common.cache.LocalCache$LocalLoadingCache.get(LocalCache.java:5147) [guava-21.0.jar:?]
+	at com.google.common.cache.LocalCache$LocalLoadingCache.getUnchecked(LocalCache.java:5153) [guava-21.0.jar:?]
+	at com.someguyssoftware.treasure2.loot.TreasureLootTableManager.getLootTableFromLocation(TreasureLootTableManager.java:91) [TreasureLootTableManager.class:?]
+	at com.someguyssoftware.treasure2.loot.TreasureLootEntryTable.addLoot(TreasureLootEntryTable.java:44) [TreasureLootEntryTable.class:?]
+	at com.someguyssoftware.treasure2.loot.TreasureLootPool.createLootRoll(TreasureLootPool.java:76) [TreasureLootPool.class:?]
+	at com.someguyssoftware.treasure2.loot.TreasureLootPool.generateLoot(TreasureLootPool.java:91) [TreasureLootPool.class:?]
+	at com.someguyssoftware.treasure2.loot.TreasureLootTable.generateLootFromPools(TreasureLootTable.java:54) [TreasureLootTable.class:?]
+	at com.someguyssoftware.treasure2.loot.TreasureLootTable.fillInventory(TreasureLootTable.java:72) [TreasureLootTable.class:?]
+	at com.someguyssoftware.treasure2.generator.chest.AbstractChestGenerator.generate(AbstractChestGenerator.java:156) [AbstractChestGenerator.class:?]
+	at com.someguyssoftware.treasure2.worldgen.ChestWorldGenerator.generateSurface(ChestWorldGenerator.java:216) [ChestWorldGenerator.class:?]
+	at com.someguyssoftware.treasure2.worldgen.ChestWorldGenerator.generate(ChestWorldGenerator.java:126) [ChestWorldGenerator.class:?]
+	at net.minecraftforge.fml.common.registry.GameRegistry.generateWorld(GameRegistry.java:167) [GameRegistry.class:?]
+	at net.minecraft.world.chunk.Chunk.func_186034_a(Chunk.java:1020) [axw.class:?]
+	at net.minecraft.world.chunk.Chunk.func_186030_a(Chunk.java:990) [axw.class:?]
+	at net.minecraft.world.gen.ChunkProviderServer.func_186025_d(ChunkProviderServer.java:157) [on.class:?]
+	at net.minecraft.server.management.PlayerChunkMapEntry.func_187268_a(PlayerChunkMapEntry.java:126) [ot.class:?]
+	at net.minecraft.server.management.PlayerChunkMap.func_72693_b(PlayerChunkMap.java:226) [ou.class:?]
+	at net.minecraft.world.WorldServer.func_72835_b(WorldServer.java:227) [oo.class:?]
+	at net.optifine.override.WorldServerOF.func_72835_b(WorldServerOF.java:39) [WorldServerOF.class:?]
+	at net.minecraft.server.MinecraftServer.func_71190_q(MinecraftServer.java:756) [MinecraftServer.class:?]
+	at net.minecraft.server.MinecraftServer.func_71217_p(MinecraftServer.java:668) [MinecraftServer.class:?]
+	at net.minecraft.server.integrated.IntegratedServer.func_71217_p(IntegratedServer.java:252) [chd.class:?]
+	at net.minecraft.server.MinecraftServer.run(MinecraftServer.java:526) [MinecraftServer.class:?]
+	at java.lang.Thread.run(Unknown Source) [?:1.8.0_211]
+2019-05-06 17:37:19,122 [Server thread] INFO Treasure2 | AbstractChestGenerator.java:167 | CHEATER! COMMON chest at coords: -1096 70 -632
+2019-05-06 17:37:26,916 [Server thread] INFO Treasure2 | AbstractChestGenerator.java:167 | CHEATER! COMMON chest at coords: -1176 59 -680
+2019-05-06 17:37:54,752 [Server thread] INFO Treasure2 | AbstractChestGenerator.java:167 | CHEATER! SCARCE chest at coords: -1192 60 -808
+2019-05-06 17:38:19,666 [Server thread] INFO Treasure2 | AbstractChestGenerator.java:167 | CHEATER! UNCOMMON chest at coords: -1000 52 -920
+2019-05-06 17:38:23,536 [Server thread] WARN Treasure2 | TreasureLootTable.java:79 | Tried to over-fill a container
+2019-05-06 17:38:23,616 [Server thread] INFO Treasure2 | AbstractChestGenerator.java:167 | CHEATER! COMMON chest at coords: -1080 57 -1000
+2019-05-06 17:38:23,618 [Server thread] INFO Treasure2 | AbstractChestGenerator.java:167 | CHEATER! SCARCE chest at coords: -1048 42 -1000
+2019-05-06 17:38:24,748 [Server thread] INFO Treasure2 | CanopyWellGenerator.java:79 | CHEATER! Wishing Well at coords: -968 70 -1016
+2019-05-06 17:38:27,330 [Server thread] INFO Treasure2 | AbstractChestGenerator.java:167 | CHEATER! COMMON chest at coords: -1144 64 -1064
+2019-05-06 17:38:30,601 [Server thread] INFO Treasure2 | AbstractChestGenerator.java:167 | CHEATER! UNCOMMON chest at coords: -1032 52 -1128
+2019-05-06 17:38:33,731 [Server thread] INFO Treasure2 | AbstractChestGenerator.java:167 | CHEATER! COMMON chest at coords: -1208 64 -1176
+2019-05-06 17:38:47,750 [Server thread] INFO Treasure2 | AbstractChestGenerator.java:167 | CHEATER! COMMON chest at coords: -1144 52 -1224
+2019-05-06 17:38:51,134 [Server thread] INFO Treasure2 | AbstractChestGenerator.java:167 | CHEATER! EPIC chest at coords: -1224 45 -1272
+2019-05-06 17:38:51,570 [Server thread] INFO Treasure2 | CanopyWellGenerator.java:79 | CHEATER! Wishing Well at coords: -1208 70 -1288
+2019-05-06 17:38:54,424 [Server thread] INFO Treasure2 | AbstractChestGenerator.java:167 | CHEATER! UNCOMMON chest at coords: -1400 61 -1272
+2019-05-06 17:38:54,744 [Server thread] INFO Treasure2 | AbstractChestGenerator.java:167 | CHEATER! SCARCE chest at coords: -1304 51 -1336
+2019-05-06 17:38:57,677 [Server thread] WARN Treasure2 | TreasureLootTable.java:79 | Tried to over-fill a container
+2019-05-06 17:38:57,679 [Server thread] INFO Treasure2 | AbstractChestGenerator.java:167 | CHEATER! RARE chest at coords: -1240 58 -1384
+2019-05-06 17:39:00,862 [Server thread] INFO Treasure2 | AbstractChestGenerator.java:167 | CHEATER! COMMON chest at coords: -1480 64 -1400
+2019-05-06 17:39:04,028 [Server thread] WARN Treasure2 | TreasureLootTable.java:79 | Tried to over-fill a container
+2019-05-06 17:39:04,032 [Server thread] INFO Treasure2 | AbstractChestGenerator.java:167 | CHEATER! SCARCE chest at coords: -1336 44 -1496
+2019-05-07 19:31:19,439 [Server thread] ERROR Treasure2 | TreasureLootTables.java:444 | Unable to locate resource /loot_tables/mocreatures/potions
+2019-05-08 14:42:24,712 [Server thread] ERROR Treasure2 | TreasureLootTables.java:444 | Unable to locate resource /loot_tables/mocreatures/potions
+2019-05-08 16:04:48,392 [Server thread] ERROR Treasure2 | TreasureLootTables.java:444 | Unable to locate resource /loot_tables/mocreatures/potions
+2019-05-12 17:10:50,175 [Server thread] ERROR Treasure2 | TreasureLootTables.java:444 | Unable to locate resource /loot_tables/mocreatures/potions
+2019-05-12 17:10:54,780 [Server thread] ERROR Treasure2 | TreasureLootTableManager.java:196 | Couldn't load loot table treasure2:armor/uncommon from jar:file:/C:/Users/amarc/AppData/Roaming/.minecraft/mods/Treasure2-mc1.12.2-f14.23.5.2768-v1.3.0.jar!/assets/treasure2/loot_tables/armor/uncommon.json
+com.google.gson.JsonSyntaxException: Expected name to be an item, was unknown string 'sgs_metals:bone_chestplate'
+	at net.minecraft.util.JsonUtils.func_188172_b(SourceFile:124) ~[rc.class:?]
+	at net.minecraft.util.JsonUtils.func_188180_i(SourceFile:135) ~[rc.class:?]
+	at com.someguyssoftware.treasure2.loot.TreasureLootEntryItem.deserialize(TreasureLootEntryItem.java:100) ~[TreasureLootEntryItem.class:?]
+	at com.someguyssoftware.treasure2.loot.TreasureLootEntry$Serializer.deserialize(TreasureLootEntry.java:92) ~[TreasureLootEntry$Serializer.class:?]
+	at com.someguyssoftware.treasure2.loot.TreasureLootEntry$Serializer.deserialize(TreasureLootEntry.java:72) ~[TreasureLootEntry$Serializer.class:?]
+	at com.google.gson.internal.bind.TreeTypeAdapter.read(TreeTypeAdapter.java:69) ~[TreeTypeAdapter.class:?]
+	at com.google.gson.internal.bind.TypeAdapterRuntimeTypeWrapper.read(TypeAdapterRuntimeTypeWrapper.java:41) ~[TypeAdapterRuntimeTypeWrapper.class:?]
+	at com.google.gson.internal.bind.ArrayTypeAdapter.read(ArrayTypeAdapter.java:72) ~[ArrayTypeAdapter.class:?]
+	at com.google.gson.Gson.fromJson(Gson.java:887) ~[Gson.class:?]
+	at com.google.gson.Gson.fromJson(Gson.java:952) ~[Gson.class:?]
+	at com.google.gson.internal.bind.TreeTypeAdapter$GsonContextImpl.deserialize(TreeTypeAdapter.java:162) ~[TreeTypeAdapter$GsonContextImpl.class:?]
+	at net.minecraft.util.JsonUtils.func_188179_a(SourceFile:439) ~[rc.class:?]
+	at net.minecraft.util.JsonUtils.func_188174_a(SourceFile:447) ~[rc.class:?]
+	at com.someguyssoftware.treasure2.loot.TreasureLootPool$Serializer.deserialize(TreasureLootPool.java:169) ~[TreasureLootPool$Serializer.class:?]
+	at com.someguyssoftware.treasure2.loot.TreasureLootPool$Serializer.deserialize(TreasureLootPool.java:165) ~[TreasureLootPool$Serializer.class:?]
+	at com.google.gson.internal.bind.TreeTypeAdapter.read(TreeTypeAdapter.java:69) ~[TreeTypeAdapter.class:?]
+	at com.google.gson.internal.bind.TypeAdapterRuntimeTypeWrapper.read(TypeAdapterRuntimeTypeWrapper.java:41) ~[TypeAdapterRuntimeTypeWrapper.class:?]
+	at com.google.gson.internal.bind.ArrayTypeAdapter.read(ArrayTypeAdapter.java:72) ~[ArrayTypeAdapter.class:?]
+	at com.google.gson.Gson.fromJson(Gson.java:887) ~[Gson.class:?]
+	at com.google.gson.Gson.fromJson(Gson.java:952) ~[Gson.class:?]
+	at com.google.gson.internal.bind.TreeTypeAdapter$GsonContextImpl.deserialize(TreeTypeAdapter.java:162) ~[TreeTypeAdapter$GsonContextImpl.class:?]
+	at net.minecraft.util.JsonUtils.func_188179_a(SourceFile:439) ~[rc.class:?]
+	at net.minecraft.util.JsonUtils.func_188177_a(SourceFile:455) ~[rc.class:?]
+	at com.someguyssoftware.treasure2.loot.TreasureLootTable$Serializer.deserialize(TreasureLootTable.java:206) ~[TreasureLootTable$Serializer.class:?]
+	at com.someguyssoftware.treasure2.loot.TreasureLootTable$Serializer.deserialize(TreasureLootTable.java:203) ~[TreasureLootTable$Serializer.class:?]
+	at com.google.gson.internal.bind.TreeTypeAdapter.read(TreeTypeAdapter.java:69) ~[TreeTypeAdapter.class:?]
+	at com.google.gson.Gson.fromJson(Gson.java:887) ~[Gson.class:?]
+	at com.google.gson.Gson.fromJson(Gson.java:852) ~[Gson.class:?]
+	at com.google.gson.Gson.fromJson(Gson.java:801) ~[Gson.class:?]
+	at com.google.gson.Gson.fromJson(Gson.java:773) ~[Gson.class:?]
+	at com.someguyssoftware.treasure2.loot.TreasureLootTableManager.hookLoadLootTable(TreasureLootTableManager.java:216) ~[TreasureLootTableManager.class:?]
+	at com.someguyssoftware.treasure2.loot.TreasureLootTableManager$Loader.loadBuiltinLootTable(TreasureLootTableManager.java:193) [TreasureLootTableManager$Loader.class:?]
+	at com.someguyssoftware.treasure2.loot.TreasureLootTableManager$Loader.load(TreasureLootTableManager.java:118) [TreasureLootTableManager$Loader.class:?]
+	at com.someguyssoftware.treasure2.loot.TreasureLootTableManager$Loader.load(TreasureLootTableManager.java:104) [TreasureLootTableManager$Loader.class:?]
+	at com.google.common.cache.LocalCache$LoadingValueReference.loadFuture(LocalCache.java:3716) [guava-21.0.jar:?]
+	at com.google.common.cache.LocalCache$Segment.loadSync(LocalCache.java:2424) [guava-21.0.jar:?]
+	at com.google.common.cache.LocalCache$Segment.lockedGetOrLoad(LocalCache.java:2298) [guava-21.0.jar:?]
+	at com.google.common.cache.LocalCache$Segment.get(LocalCache.java:2211) [guava-21.0.jar:?]
+	at com.google.common.cache.LocalCache.get(LocalCache.java:4154) [guava-21.0.jar:?]
+	at com.google.common.cache.LocalCache.getOrLoad(LocalCache.java:4158) [guava-21.0.jar:?]
+	at com.google.common.cache.LocalCache$LocalLoadingCache.get(LocalCache.java:5147) [guava-21.0.jar:?]
+	at com.google.common.cache.LocalCache$LocalLoadingCache.getUnchecked(LocalCache.java:5153) [guava-21.0.jar:?]
+	at com.someguyssoftware.treasure2.loot.TreasureLootTableManager.getLootTableFromLocation(TreasureLootTableManager.java:91) [TreasureLootTableManager.class:?]
+	at com.someguyssoftware.treasure2.loot.TreasureLootEntryTable.addLoot(TreasureLootEntryTable.java:44) [TreasureLootEntryTable.class:?]
+	at com.someguyssoftware.treasure2.loot.TreasureLootPool.createLootRoll(TreasureLootPool.java:76) [TreasureLootPool.class:?]
+	at com.someguyssoftware.treasure2.loot.TreasureLootPool.generateLoot(TreasureLootPool.java:91) [TreasureLootPool.class:?]
+	at com.someguyssoftware.treasure2.loot.TreasureLootTable.generateLootFromPools(TreasureLootTable.java:54) [TreasureLootTable.class:?]
+	at com.someguyssoftware.treasure2.loot.TreasureLootTable.fillInventory(TreasureLootTable.java:72) [TreasureLootTable.class:?]
+	at com.someguyssoftware.treasure2.generator.chest.AbstractChestGenerator.generate(AbstractChestGenerator.java:156) [AbstractChestGenerator.class:?]
+	at com.someguyssoftware.treasure2.worldgen.ChestWorldGenerator.generateSurface(ChestWorldGenerator.java:216) [ChestWorldGenerator.class:?]
+	at com.someguyssoftware.treasure2.worldgen.ChestWorldGenerator.generate(ChestWorldGenerator.java:126) [ChestWorldGenerator.class:?]
+	at net.minecraftforge.fml.common.registry.GameRegistry.generateWorld(GameRegistry.java:167) [GameRegistry.class:?]
+	at net.minecraft.world.chunk.Chunk.func_186034_a(Chunk.java:1020) [axw.class:?]
+	at net.minecraft.world.chunk.Chunk.func_186030_a(Chunk.java:999) [axw.class:?]
+	at net.minecraft.world.gen.ChunkProviderServer.func_186025_d(ChunkProviderServer.java:157) [on.class:?]
+	at net.minecraft.server.MinecraftServer.func_71222_d(MinecraftServer.java:344) [MinecraftServer.class:?]
+	at net.minecraft.server.integrated.IntegratedServer.func_71247_a(IntegratedServer.java:186) [chd.class:?]
+	at net.minecraft.server.integrated.IntegratedServer.func_71197_b(IntegratedServer.java:209) [chd.class:?]
+	at net.minecraft.server.MinecraftServer.run(MinecraftServer.java:486) [MinecraftServer.class:?]
+	at java.lang.Thread.run(Unknown Source) [?:1.8.0_211]
+2019-05-12 17:10:54,795 [Server thread] INFO Treasure2 | AbstractChestGenerator.java:167 | CHEATER! COMMON chest at coords: 72 57 -360
+2019-05-12 17:10:59,755 [Server thread] INFO Treasure2 | AbstractChestGenerator.java:167 | CHEATER! COMMON chest at coords: 200 57 -376
+2019-05-12 17:11:03,586 [Server thread] INFO Treasure2 | AbstractChestGenerator.java:167 | CHEATER! UNCOMMON chest at coords: 280 41 -376
+2019-05-12 17:11:06,643 [Server thread] INFO Treasure2 | AbstractChestGenerator.java:167 | CHEATER! SCARCE chest at coords: 360 61 -408
+2019-05-12 18:14:53,653 [Server thread] ERROR Treasure2 | TreasureLootTables.java:444 | Unable to locate resource /loot_tables/mocreatures/potions
+2019-05-12 18:21:35,585 [Server thread] ERROR Treasure2 | TreasureLootTables.java:444 | Unable to locate resource /loot_tables/mocreatures/potions
+2019-05-12 18:29:28,601 [Server thread] ERROR Treasure2 | TreasureLootTables.java:444 | Unable to locate resource /loot_tables/mocreatures/potions
+2019-05-13 14:38:51,017 [Server thread] ERROR Treasure2 | TreasureLootTables.java:444 | Unable to locate resource /loot_tables/mocreatures/potions
+2019-05-14 15:32:28,293 [Server thread] ERROR Treasure2 | TreasureLootTables.java:444 | Unable to locate resource /loot_tables/mocreatures/potions
+2019-05-14 17:13:28,560 [Server thread] ERROR Treasure2 | TreasureLootTables.java:444 | Unable to locate resource /loot_tables/mocreatures/potions
+2019-05-14 17:32:18,448 [Server thread] INFO Treasure2 | SimpleWellGenerator.java:85 | CHEATER! Wishing Well at coords: -552 70 -760
+2019-05-14 17:32:22,925 [Server thread] INFO Treasure2 | AbstractChestGenerator.java:167 | CHEATER! COMMON chest at coords: -584 55 -600
+2019-05-14 19:45:27,044 [Server thread] ERROR Treasure2 | TreasureLootTables.java:444 | Unable to locate resource /loot_tables/mocreatures/potions
+2019-05-15 14:54:07,229 [Server thread] ERROR Treasure2 | TreasureLootTables.java:444 | Unable to locate resource /loot_tables/mocreatures/potions
+2019-05-15 14:59:11,992 [Server thread] ERROR Treasure2 | TreasureLootTables.java:444 | Unable to locate resource /loot_tables/mocreatures/potions
+2019-05-16 13:51:28,838 [Server thread] ERROR Treasure2 | TreasureLootTables.java:444 | Unable to locate resource /loot_tables/mocreatures/potions
+2019-05-21 15:39:20,917 [Server thread] ERROR Treasure2 | TreasureLootTables.java:444 | Unable to locate resource /loot_tables/mocreatures/potions
+2019-05-21 15:39:26,323 [Server thread] INFO Treasure2 | AbstractChestGenerator.java:167 | CHEATER! COMMON chest at coords: -88 59 376
+2019-05-21 15:39:29,472 [Server thread] INFO Treasure2 | AbstractChestGenerator.java:167 | CHEATER! UNCOMMON chest at coords: -8 51 232
+2019-05-21 15:39:32,646 [Server thread] INFO Treasure2 | AbstractChestGenerator.java:167 | CHEATER! COMMON chest at coords: 56 58 328
+2019-05-21 15:39:35,968 [Server thread] INFO Treasure2 | AbstractChestGenerator.java:167 | CHEATER! UNCOMMON chest at coords: 136 72 344
+2019-05-21 15:39:37,355 [Server thread] INFO Treasure2 | WoodDrawWellGenerator.java:79 | CHEATER! Wishing Well at coords: 168 70 392
+2019-05-21 15:39:39,025 [Server thread] INFO Treasure2 | AbstractChestGenerator.java:167 | CHEATER! RARE chest at coords: 216 42 312
+2019-05-21 15:41:47,814 [Server thread] WARN Treasure2 | TreasureLootTable.java:79 | Tried to over-fill a container
+2019-05-21 15:41:47,865 [Server thread] INFO Treasure2 | AbstractChestGenerator.java:167 | CHEATER! SCARCE chest at coords: -232 55 136
+2019-05-21 15:46:23,759 [Server thread] INFO Treasure2 | AbstractChestGenerator.java:167 | CHEATER! COMMON chest at coords: -200 55 392
+2019-05-21 15:49:39,176 [Server thread] INFO Treasure2 | AbstractChestGenerator.java:167 | CHEATER! SCARCE chest at coords: 232 40 504
+2019-05-21 15:49:40,177 [Server thread] INFO Treasure2 | WoodDrawWellGenerator.java:79 | CHEATER! Wishing Well at coords: 168 74 536
+2019-05-21 15:49:44,876 [Server thread] INFO Treasure2 | AbstractChestGenerator.java:167 | CHEATER! RARE chest at coords: 328 22 328
+2019-05-21 15:50:35,167 [Server thread] INFO Treasure2 | AbstractChestGenerator.java:167 | CHEATER! EPIC chest at coords: 344 40 536
+2019-05-21 15:50:35,675 [Server thread] INFO Treasure2 | WoodDrawWellGenerator.java:79 | CHEATER! Wishing Well at coords: 344 67 632
+2019-05-21 15:50:43,174 [Server thread] INFO Treasure2 | AbstractChestGenerator.java:167 | CHEATER! UNCOMMON chest at coords: 104 59 600
+2019-06-09 11:11:29,836 [Server thread] ERROR Treasure2 | TreasureLootTables.java:444 | Unable to locate resource /loot_tables/mocreatures/potions
+2019-06-09 11:11:36,254 [Server thread] INFO Treasure2 | AbstractChestGenerator.java:167 | CHEATER! COMMON chest at coords: -72 63 168
+2019-06-09 11:11:42,749 [Server thread] INFO Treasure2 | AbstractChestGenerator.java:167 | CHEATER! RARE chest at coords: 152 51 40
+2019-06-09 11:17:28,435 [Server thread] ERROR Treasure2 | TreasureLootTables.java:444 | Unable to locate resource /loot_tables/mocreatures/potions
+2019-06-09 11:17:33,453 [Server thread] INFO Treasure2 | AbstractChestGenerator.java:167 | CHEATER! COMMON chest at coords: 56 51 424
+2019-06-09 11:17:38,245 [Server thread] INFO Treasure2 | AbstractChestGenerator.java:167 | CHEATER! SCARCE chest at coords: 152 44 408
+2019-06-09 11:17:41,033 [Server thread] INFO Treasure2 | AbstractChestGenerator.java:167 | CHEATER! COMMON chest at coords: 248 56 264
+2019-06-09 11:17:42,169 [Server thread] INFO Treasure2 | SimpleWellGenerator.java:85 | CHEATER! Wishing Well at coords: 280 68 360
+2019-06-09 11:17:43,228 [Server thread] WARN Treasure2 | TreasureLootTable.java:79 | Tried to over-fill a container
+2019-06-09 11:17:43,229 [Server thread] INFO Treasure2 | AbstractChestGenerator.java:167 | CHEATER! RARE chest at coords: 328 32 88
+2019-06-09 11:23:59,674 [Server thread] INFO Treasure2 | AbstractChestGenerator.java:167 | CHEATER! UNCOMMON chest at coords: 136 71 520
+2019-06-09 11:24:04,525 [Server thread] ERROR Treasure2 | TreasureLootTableManager.java:196 | Couldn't load loot table treasure2:armor/uncommon from jar:file:/C:/Users/amarc/AppData/Roaming/.minecraft/mods/Treasure2-mc1.12.2-f14.23.5.2768-v1.3.0.jar!/assets/treasure2/loot_tables/armor/uncommon.json
+com.google.gson.JsonSyntaxException: Expected name to be an item, was unknown string 'sgs_metals:bone_chestplate'
+	at net.minecraft.util.JsonUtils.func_188172_b(SourceFile:124) ~[rc.class:?]
+	at net.minecraft.util.JsonUtils.func_188180_i(SourceFile:135) ~[rc.class:?]
+	at com.someguyssoftware.treasure2.loot.TreasureLootEntryItem.deserialize(TreasureLootEntryItem.java:100) ~[TreasureLootEntryItem.class:?]
+	at com.someguyssoftware.treasure2.loot.TreasureLootEntry$Serializer.deserialize(TreasureLootEntry.java:92) ~[TreasureLootEntry$Serializer.class:?]
+	at com.someguyssoftware.treasure2.loot.TreasureLootEntry$Serializer.deserialize(TreasureLootEntry.java:72) ~[TreasureLootEntry$Serializer.class:?]
+	at com.google.gson.internal.bind.TreeTypeAdapter.read(TreeTypeAdapter.java:69) ~[TreeTypeAdapter.class:?]
+	at com.google.gson.internal.bind.TypeAdapterRuntimeTypeWrapper.read(TypeAdapterRuntimeTypeWrapper.java:41) ~[TypeAdapterRuntimeTypeWrapper.class:?]
+	at com.google.gson.internal.bind.ArrayTypeAdapter.read(ArrayTypeAdapter.java:72) ~[ArrayTypeAdapter.class:?]
+	at com.google.gson.Gson.fromJson(Gson.java:887) ~[Gson.class:?]
+	at com.google.gson.Gson.fromJson(Gson.java:952) ~[Gson.class:?]
+	at com.google.gson.internal.bind.TreeTypeAdapter$GsonContextImpl.deserialize(TreeTypeAdapter.java:162) ~[TreeTypeAdapter$GsonContextImpl.class:?]
+	at net.minecraft.util.JsonUtils.func_188179_a(SourceFile:439) ~[rc.class:?]
+	at net.minecraft.util.JsonUtils.func_188174_a(SourceFile:447) ~[rc.class:?]
+	at com.someguyssoftware.treasure2.loot.TreasureLootPool$Serializer.deserialize(TreasureLootPool.java:169) ~[TreasureLootPool$Serializer.class:?]
+	at com.someguyssoftware.treasure2.loot.TreasureLootPool$Serializer.deserialize(TreasureLootPool.java:165) ~[TreasureLootPool$Serializer.class:?]
+	at com.google.gson.internal.bind.TreeTypeAdapter.read(TreeTypeAdapter.java:69) ~[TreeTypeAdapter.class:?]
+	at com.google.gson.internal.bind.TypeAdapterRuntimeTypeWrapper.read(TypeAdapterRuntimeTypeWrapper.java:41) ~[TypeAdapterRuntimeTypeWrapper.class:?]
+	at com.google.gson.internal.bind.ArrayTypeAdapter.read(ArrayTypeAdapter.java:72) ~[ArrayTypeAdapter.class:?]
+	at com.google.gson.Gson.fromJson(Gson.java:887) ~[Gson.class:?]
+	at com.google.gson.Gson.fromJson(Gson.java:952) ~[Gson.class:?]
+	at com.google.gson.internal.bind.TreeTypeAdapter$GsonContextImpl.deserialize(TreeTypeAdapter.java:162) ~[TreeTypeAdapter$GsonContextImpl.class:?]
+	at net.minecraft.util.JsonUtils.func_188179_a(SourceFile:439) ~[rc.class:?]
+	at net.minecraft.util.JsonUtils.func_188177_a(SourceFile:455) ~[rc.class:?]
+	at com.someguyssoftware.treasure2.loot.TreasureLootTable$Serializer.deserialize(TreasureLootTable.java:206) ~[TreasureLootTable$Serializer.class:?]
+	at com.someguyssoftware.treasure2.loot.TreasureLootTable$Serializer.deserialize(TreasureLootTable.java:203) ~[TreasureLootTable$Serializer.class:?]
+	at com.google.gson.internal.bind.TreeTypeAdapter.read(TreeTypeAdapter.java:69) ~[TreeTypeAdapter.class:?]
+	at com.google.gson.Gson.fromJson(Gson.java:887) ~[Gson.class:?]
+	at com.google.gson.Gson.fromJson(Gson.java:852) ~[Gson.class:?]
+	at com.google.gson.Gson.fromJson(Gson.java:801) ~[Gson.class:?]
+	at com.google.gson.Gson.fromJson(Gson.java:773) ~[Gson.class:?]
+	at com.someguyssoftware.treasure2.loot.TreasureLootTableManager.hookLoadLootTable(TreasureLootTableManager.java:216) ~[TreasureLootTableManager.class:?]
+	at com.someguyssoftware.treasure2.loot.TreasureLootTableManager$Loader.loadBuiltinLootTable(TreasureLootTableManager.java:193) [TreasureLootTableManager$Loader.class:?]
+	at com.someguyssoftware.treasure2.loot.TreasureLootTableManager$Loader.load(TreasureLootTableManager.java:118) [TreasureLootTableManager$Loader.class:?]
+	at com.someguyssoftware.treasure2.loot.TreasureLootTableManager$Loader.load(TreasureLootTableManager.java:104) [TreasureLootTableManager$Loader.class:?]
+	at com.google.common.cache.LocalCache$LoadingValueReference.loadFuture(LocalCache.java:3716) [guava-21.0.jar:?]
+	at com.google.common.cache.LocalCache$Segment.loadSync(LocalCache.java:2424) [guava-21.0.jar:?]
+	at com.google.common.cache.LocalCache$Segment.lockedGetOrLoad(LocalCache.java:2298) [guava-21.0.jar:?]
+	at com.google.common.cache.LocalCache$Segment.get(LocalCache.java:2211) [guava-21.0.jar:?]
+	at com.google.common.cache.LocalCache.get(LocalCache.java:4154) [guava-21.0.jar:?]
+	at com.google.common.cache.LocalCache.getOrLoad(LocalCache.java:4158) [guava-21.0.jar:?]
+	at com.google.common.cache.LocalCache$LocalLoadingCache.get(LocalCache.java:5147) [guava-21.0.jar:?]
+	at com.google.common.cache.LocalCache$LocalLoadingCache.getUnchecked(LocalCache.java:5153) [guava-21.0.jar:?]
+	at com.someguyssoftware.treasure2.loot.TreasureLootTableManager.getLootTableFromLocation(TreasureLootTableManager.java:91) [TreasureLootTableManager.class:?]
+	at com.someguyssoftware.treasure2.loot.TreasureLootEntryTable.addLoot(TreasureLootEntryTable.java:44) [TreasureLootEntryTable.class:?]
+	at com.someguyssoftware.treasure2.loot.TreasureLootPool.createLootRoll(TreasureLootPool.java:76) [TreasureLootPool.class:?]
+	at com.someguyssoftware.treasure2.loot.TreasureLootPool.generateLoot(TreasureLootPool.java:91) [TreasureLootPool.class:?]
+	at com.someguyssoftware.treasure2.loot.TreasureLootTable.generateLootFromPools(TreasureLootTable.java:54) [TreasureLootTable.class:?]
+	at com.someguyssoftware.treasure2.loot.TreasureLootTable.fillInventory(TreasureLootTable.java:72) [TreasureLootTable.class:?]
+	at com.someguyssoftware.treasure2.generator.chest.AbstractChestGenerator.generate(AbstractChestGenerator.java:156) [AbstractChestGenerator.class:?]
+	at com.someguyssoftware.treasure2.worldgen.ChestWorldGenerator.generateSurface(ChestWorldGenerator.java:216) [ChestWorldGenerator.class:?]
+	at com.someguyssoftware.treasure2.worldgen.ChestWorldGenerator.generate(ChestWorldGenerator.java:126) [ChestWorldGenerator.class:?]
+	at net.minecraftforge.fml.common.registry.GameRegistry.generateWorld(GameRegistry.java:167) [GameRegistry.class:?]
+	at net.minecraft.world.chunk.Chunk.func_186034_a(Chunk.java:1020) [axw.class:?]
+	at net.minecraft.world.chunk.Chunk.func_186030_a(Chunk.java:990) [axw.class:?]
+	at net.minecraft.world.gen.ChunkProviderServer.func_186025_d(ChunkProviderServer.java:157) [on.class:?]
+	at net.minecraft.server.management.PlayerChunkMapEntry.func_187268_a(PlayerChunkMapEntry.java:126) [ot.class:?]
+	at net.minecraft.server.management.PlayerChunkMap.func_72693_b(PlayerChunkMap.java:226) [ou.class:?]
+	at net.minecraft.world.WorldServer.func_72835_b(WorldServer.java:227) [oo.class:?]
+	at net.optifine.override.WorldServerOF.func_72835_b(WorldServerOF.java:39) [WorldServerOF.class:?]
+	at net.minecraft.server.MinecraftServer.func_71190_q(MinecraftServer.java:756) [MinecraftServer.class:?]
+	at net.minecraft.server.MinecraftServer.func_71217_p(MinecraftServer.java:668) [MinecraftServer.class:?]
+	at net.minecraft.server.integrated.IntegratedServer.func_71217_p(IntegratedServer.java:252) [chd.class:?]
+	at net.minecraft.server.MinecraftServer.run(MinecraftServer.java:526) [MinecraftServer.class:?]
+	at java.lang.Thread.run(Unknown Source) [?:1.8.0_211]
+2019-06-09 11:24:04,536 [Server thread] INFO Treasure2 | AbstractChestGenerator.java:167 | CHEATER! COMMON chest at coords: 40 63 616
+2019-06-09 11:25:32,331 [Server thread] INFO Treasure2 | AbstractChestGenerator.java:167 | CHEATER! UNCOMMON chest at coords: 88 49 344
+2019-06-09 11:25:34,762 [Server thread] INFO Treasure2 | AbstractChestGenerator.java:167 | CHEATER! SCARCE chest at coords: 168 38 88
+2019-06-09 11:25:35,269 [Server thread] INFO Treasure2 | WoodDrawWellGenerator.java:79 | CHEATER! Wishing Well at coords: 168 64 440
+2019-06-09 11:25:37,693 [Server thread] INFO Treasure2 | AbstractChestGenerator.java:167 | CHEATER! UNCOMMON chest at coords: 248 52 360
+2019-06-09 11:25:39,876 [Server thread] INFO Treasure2 | AbstractChestGenerator.java:167 | CHEATER! COMMON chest at coords: 328 57 168
+2019-06-09 11:25:42,115 [Server thread] INFO Treasure2 | AbstractChestGenerator.java:167 | CHEATER! UNCOMMON chest at coords: 392 44 248
+2019-06-09 11:26:56,866 [Server thread] INFO Treasure2 | AbstractChestGenerator.java:167 | CHEATER! COMMON chest at coords: 488 58 328
