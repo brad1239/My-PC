@@ -1,0 +1,31 @@
+state={
+	id=792
+	name="STATE_792"
+	history={
+		owner = BOS
+		victory_points = {
+			3924 3 
+		}
+		buildings = {
+			infrastructure = 4
+3924 = {
+				naval_base = 3
+
+			}
+		6889 = {
+				naval_base = 1
+
+			}
+
+		}
+		add_core_of = BOS
+		add_core_of = CRO
+
+	}
+	provinces={
+		3868 3924 6889 11816 
+	}
+	manpower=600000
+	buildings_max_level_factor=1.000
+state_category=town
+}

@@ -1,0 +1,21 @@
+state={
+	id=796
+	name="STATE_796"
+		state_category=town
+	history={
+		owner = GAL
+		buildings = {
+			infrastructure = 4
+
+		}
+		add_core_of = GAL
+		add_core_of = ROM
+
+	}
+
+	provinces={
+		6761 11689 
+	}
+	manpower=122333
+	buildings_max_level_factor=1.000
+}

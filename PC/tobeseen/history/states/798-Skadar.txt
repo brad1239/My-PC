@@ -1,0 +1,20 @@
+state={
+	id=798
+	name="STATE_798"
+	manpower=300000
+	state_category=town
+	history={
+		owner = MNT
+		buildings = {
+			infrastructure = 4
+
+		}
+		add_core_of = MNT
+		add_core_of = ALB
+
+	}
+	provinces={
+		3896 9780 
+	}
+	buildings_max_level_factor=1.000
+}

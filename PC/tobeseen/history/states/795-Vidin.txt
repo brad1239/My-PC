@@ -1,0 +1,21 @@
+state={
+	id=795
+	name="STATE_795"
+		state_category=town
+	history={
+		owner = BUL
+		buildings = {
+			infrastructure = 4
+
+		}
+		add_core_of = BUL
+		add_core_of = BUL
+
+	}
+
+	provinces={
+		965 9771 11754 
+	}
+	manpower=644333
+	buildings_max_level_factor=1.000
+}

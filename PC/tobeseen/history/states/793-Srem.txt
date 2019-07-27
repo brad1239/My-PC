@@ -1,0 +1,20 @@
+state={
+	id=793
+	name="STATE_793"
+	state_category=town
+	manpower=500000
+	history={
+		owner = CRO
+		buildings = {
+			infrastructure = 4
+
+		}
+		add_core_of = CRO
+		add_core_of = SER
+
+	}
+	provinces={
+		11580 
+	}
+	buildings_max_level_factor=1.000
+}
